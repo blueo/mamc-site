@@ -10,12 +10,11 @@ sections:
   templates:
   - settings
 - type: directory
-  path: portfolio/works
-  label: Works
-  create: all
+  path: news
+  label: news
+  create: documents
   match: "**/*"
-  templates:
-  - works
+  exclude: index
 - type: directory
   path: portfolio/journal
   label: Journal
