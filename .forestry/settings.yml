@@ -27,8 +27,8 @@ sections:
 - type: document
   path: portfolio/config.json
   label: Site Config
-upload_dir: ''
-public_path: ''
+upload_dir: mamc/media
+public_path: media
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
