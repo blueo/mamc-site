@@ -1,0 +1,24 @@
+---
+label: News
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: body
+  type: text
+  config:
+    required: false
+  label: Body
+  description: Main content
+- name: date
+  type: datetime
+  description: publish date
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: Date
