@@ -13,7 +13,7 @@ sections:
   path: portfolio/news
   label: news
   create: documents
-  match: "**/*"
+  match: "**/[!index]*"
   exclude: index
   templates:
   - news
