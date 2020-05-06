@@ -2,7 +2,7 @@
   "name": "mamc-vuepress",
   "scripts": {
     "site:build": "vuepress build portfolio",
-    "site:develop": "vuepress dev portfolio"
+    "site:develop": "vuepress dev --no-clear-screen portfolio"
   },
   "author": "Bernard Hamlin",
   "license": "MIT",
