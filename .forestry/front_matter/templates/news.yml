@@ -22,3 +22,12 @@ fields:
     time_format: 
     display_utc: false
   label: Date
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  description: used to define the news page layout - don't change this unless you
+    know what it does
+  hidden: true
+  default: NewsLayout
