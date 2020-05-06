@@ -5,34 +5,19 @@
 
     <div class="container">
 
-      <!-- Works list -->
-      <div
-        v-if="$route.path === '/'"
-        :style="{
-          marginTop: '14vw'
-        }"
-      >
-        <Content/>
-      </div>
+      <!-- Home page content -->
+       <div
+          v-if="$route.path === '/'"
+          :style="{
+            marginTop: '14vw'
+          }"
+        >
+          <Content/>
+        </div>
 
-      <!-- Single project view -->
-      <div v-if="isSingleProject">
-        <SingleProjectHeader
-          :title="$page.frontmatter.title"
-          :year="$page.frontmatter.year.toString()"
-          :categories="$page.frontmatter.categories"
-        />
-        <Content/>
-      </div>
-
-      <!-- Journal list -->
-      <div v-if="$route.path === '/journal/'" class="journal-list">
+      <!-- News list -->
+      <div v-if="$route.path === '/news/'" class="news-list">
         <Content />
-      </div>
-
-      <!-- Single journal -->
-      <div v-if="isSingleJournal" class="single-journal">
-        <Content/>
       </div>
 
     </div>
@@ -44,22 +29,6 @@
 
 <script>
   export default {
-    computed: {
-      isSingleProject() {
-        const worksRoute = '/works/'
-        const path = this.$route.path
-        if (path.includes('works') && path.length >= (worksRoute.length + 1)) {
-          return true
-        }
-      },
-      isSingleJournal() {
-        const journalRoute = '/journal/'
-        const path = this.$route.path
-        if (path.includes('journal') && path.length >= (journalRoute.length + 1)) {
-          return true
-        }
-      }
-    },
     updated() {
         // unwrap all images from paragraph tags so we can have
         // different widths inside the content.
@@ -126,7 +95,7 @@
     padding: 0 5vw;
   }
 
-  .journal-list, .single-journal {
+  .news-list {
     width: 800px;
     max-width: 100%;
     margin: 0 auto;
