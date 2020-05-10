@@ -1,0 +1,19 @@
+---
+label: Event
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: sub_title
+  label: sub_title
+- type: text
+  name: body
+  label: body
+- type: datetime
+  name: start_datetime
+  label: start_datetime
+- type: text
+  name: layout
+  label: layout
