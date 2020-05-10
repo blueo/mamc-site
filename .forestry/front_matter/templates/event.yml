@@ -4,16 +4,22 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title of the event
 - type: text
   name: sub_title
-  label: sub_title
+  label: Sub Title of the event
 - type: text
   name: body
-  label: body
+  label: Body
+  description: A description of the event
 - type: datetime
   name: start_datetime
-  label: start_datetime
+  label: Start date and time
+  description: The beginning of your event
+  config:
+    required: true
 - type: text
   name: layout
   label: layout
+  default: NewsLayout
+  hidden: true
