@@ -18,12 +18,12 @@ sections:
   templates:
   - news
 - type: directory
-  path: portfolio/journal
-  label: Journal
+  path: portfolio/events
+  label: Events
   create: all
   match: "**/[!index]*"
   templates:
-  - journal
+  - news
 - type: heading
   label: Data
 - type: document
