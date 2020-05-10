@@ -23,7 +23,7 @@ sections:
   create: all
   match: "**/[!index]*"
   templates:
-  - news
+  - event
 - type: heading
   label: Data
 - type: document
