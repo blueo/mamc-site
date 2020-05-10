@@ -11,7 +11,7 @@ sections:
   - settings
 - type: directory
   path: portfolio/news
-  label: news
+  label: News
   create: documents
   match: "**/[!index]*"
   exclude: index
