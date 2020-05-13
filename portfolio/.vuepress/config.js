@@ -1,4 +1,4 @@
-const config = require('../config.json');
+const config = require("../config.json");
 module.exports = {
   title: config.title,
   description: config.description,
@@ -8,12 +8,25 @@ module.exports = {
     footer: config.footer,
     nav: config.navigation,
   },
-  head: [
-    ['link', { rel: "icon", href: config.favicon }]
-  ],
+  head: [["link", { rel: "icon", href: config.favicon }]],
   markdown: {
     anchor: {
-      permalink: false
-    }
-  }
+      permalink: false,
+    },
+  },
+  plugins: [
+    [
+      "vuepress-plugin-dehydrate",
+      {
+        // disable SSR
+        noSSR: "404.html",
+        // remove scripts
+        noScript: [
+          // support glob patterns
+          "**/*.html",
+          "!404.html",
+        ],
+      },
+    ],
+  ],
 };

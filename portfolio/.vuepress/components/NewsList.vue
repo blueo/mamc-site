@@ -1,10 +1,10 @@
 <template>
-  <div class="news-list">
-    <div v-for="post in news" :key="post.title" class="post">
+  <section class="news-list">
+    <article v-for="post in news" :key="post.title" class="post">
       <router-link tag="h2" :to="post.path" class="title">{{ post.frontmatter.title }}</router-link>
       <p>{{ post.frontmatter.body }}</p>
-    </div>
-  </div>
+    </article>
+  </section>
 </template>
 
 <script>

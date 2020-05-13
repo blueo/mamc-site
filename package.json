@@ -7,7 +7,11 @@
   "author": "Bernard Hamlin",
   "license": "MIT",
   "dependencies": {
+    "date-fns": "^2.13.0",
     "vuepress": "^1.2.0",
     "webpack-dev-middleware": "3.6.0"
+  },
+  "devDependencies": {
+    "vuepress-plugin-dehydrate": "^1.1.3"
   }
 }

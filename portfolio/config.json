@@ -22,6 +22,12 @@
       "link": "/news/",
       "position": "left",
       "external": false
+    },
+    {
+      "text": "Events",
+      "link": "/events/",
+      "position": "left",
+      "external": false
     }
   ]
 }
