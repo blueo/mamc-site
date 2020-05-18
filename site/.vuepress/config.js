@@ -15,18 +15,19 @@ module.exports = {
     },
   },
   plugins: [
-    [
-      "vuepress-plugin-dehydrate",
-      {
-        // disable SSR
-        noSSR: "404.html",
-        // remove scripts
-        noScript: [
-          // support glob patterns
-          "**/*.html",
-          "!404.html",
-        ],
-      },
-    ],
+    // @todo re-activate this and have small script for menu toggle
+    // [
+    //   "vuepress-plugin-dehydrate",
+    //   {
+    //     // disable SSR
+    //     noSSR: "404.html",
+    //     // remove scripts
+    //     noScript: [
+    //       // support glob patterns
+    //       "**/*.html",
+    //       "!404.html",
+    //     ],
+    //   },
+    // ],
   ],
 };
