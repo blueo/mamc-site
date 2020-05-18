@@ -12,32 +12,17 @@
   >
     <nav v-if="navLinks" class="navigation left desktop-nav">
       <ul>
-        <li
-          v-for="nav in navLinks"
-          :key="nav.text"
-          v-if="nav.position === 'left' && !nav.external"
-        >
+        <li v-for="nav in navLinks" :key="nav.text" v-if="nav.position === 'left' && !nav.external">
           <a :href="nav.link">{{ nav.text }}</a>
         </li>
-        <li
-          v-for="nav in navLinks"
-          v-if="nav.position === 'left' && nav.external"
-        >
+        <li v-for="nav in navLinks" v-if="nav.position === 'left' && nav.external">
           <a :href="nav.link" target="_blank">{{ nav.text }}</a>
         </li>
       </ul>
     </nav>
 
     <div class="brand">
-      <router-link to="/">
-        <div
-          v-if="logo"
-          class="logo"
-          :style="{ backgroundImage: `url(${logo})` }"
-          :title="$site.title"
-        />
-        <span v-else>{{ $site.title }}</span>
-      </router-link>
+      <span class="logo" :title="$site.title">✝</span>
     </div>
 
     <nav v-if="navLinks" class="navigation right desktop-nav">
@@ -52,10 +37,7 @@
           v-text="nav.text"
           exact
         />
-        <li
-          v-for="nav in navLinks"
-          v-if="nav.position === 'right' && nav.external"
-        >
+        <li v-for="nav in navLinks" v-if="nav.position === 'right' && nav.external">
           <a :href="nav.link" target="_blank">{{ nav.text }}</a>
         </li>
       </ul>
@@ -75,11 +57,7 @@
             v-text="nav.text"
             exact
           />
-          <li
-            v-for="nav in navLinks"
-            v-if="nav.external"
-            @click="toggleMobileNav"
-          >
+          <li v-for="nav in navLinks" v-if="nav.external" @click="toggleMobileNav">
             <a :href="nav.link" target="_blank">{{ nav.text }}</a>
           </li>
         </ul>
@@ -94,28 +72,28 @@ export default {
   props: {
     logo: {
       type: String,
-      required: false,
+      required: false
     },
     sticky: {
       type: Boolean,
-      required: false,
-    },
+      required: false
+    }
   },
   data() {
     return {
-      mobileNavActive: false,
+      mobileNavActive: false
     };
   },
   computed: {
     navLinks() {
       return this.$site.themeConfig.nav;
-    },
+    }
   },
   methods: {
     toggleMobileNav() {
       this.mobileNavActive = !this.mobileNavActive;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -125,18 +103,27 @@ export default {
   position: relative;
   align-items: center;
   justify-content: space-between;
-  height: 6rem;
-  padding: 5vw;
+  height: 5rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   font-size: 0.8rem;
   font-weight: 600;
   z-index: 10;
   background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.brand {
+  text-align: center;
 }
 
 .logo {
   position: absolute;
   width: 3rem;
   height: 3rem;
+  font-size: 3rem;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

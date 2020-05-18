@@ -4,12 +4,9 @@
 
     <div class="container">
       <!-- Home page content -->
-      <div
-        v-if="$route.path === '/'"
-        :style="{
-          marginTop: '14vw',
-        }"
-      >
+      <div v-if="$route.path === '/'" :style="{
+          marginTop: '6rem',
+        }">
         <Content />
       </div>
 
@@ -34,18 +31,18 @@ export default {
     // unwrap all images from paragraph tags so we can have
     // different widths inside the content.
 
-    document.querySelectorAll("p img").forEach((image) => {
+    document.querySelectorAll("p img").forEach(image => {
       var wrapper = image.parentNode;
       let children = wrapper.children;
       let fragment = document.createDocumentFragment();
 
-      Array.from(children).forEach((child) => {
+      Array.from(children).forEach(child => {
         fragment.appendChild(child);
       });
 
       wrapper.parentNode.replaceChild(fragment, wrapper);
     });
-  },
+  }
 };
 </script>
 
