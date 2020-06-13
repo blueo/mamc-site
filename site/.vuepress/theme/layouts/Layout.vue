@@ -2,11 +2,19 @@
   <div class="wrapper">
     <Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
 
+    <!-- Home page content -->
+    <div
+      v-if="$route.path === '/'"
+      :style="{
+        marginTop: '6rem',
+      }"
+    >
+      <Content />
+    </div>
+
     <div class="container">
-      <!-- Home page content -->
-      <div v-if="$route.path === '/'" :style="{
-          marginTop: '6rem',
-        }">
+      <!-- about -->
+      <div v-if="$route.path === '/about-us/'">
         <Content />
       </div>
 
@@ -31,24 +39,25 @@ export default {
     // unwrap all images from paragraph tags so we can have
     // different widths inside the content.
 
-    document.querySelectorAll("p img").forEach(image => {
+    document.querySelectorAll("p img").forEach((image) => {
       var wrapper = image.parentNode;
       let children = wrapper.children;
       let fragment = document.createDocumentFragment();
 
-      Array.from(children).forEach(child => {
+      Array.from(children).forEach((child) => {
         fragment.appendChild(child);
       });
 
       wrapper.parentNode.replaceChild(fragment, wrapper);
     });
-  }
+  },
 };
 </script>
 
 <style>
 :root {
   --color-black: #1c1c1c;
+  --color-white: #ffffff;
   --color-highlight: rgba(249, 233, 172, 0.99);
 }
 
