@@ -18,41 +18,12 @@
         <Content />
       </div>
 
-      <!-- News list -->
-      <div v-if="$route.path === '/news/'">
-        <Content />
-      </div>
-
-      <!-- News list -->
-      <div v-if="$route.path === '/events/'">
-        <Content />
-      </div>
     </div>
 
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
-<script>
-export default {
-  updated() {
-    // unwrap all images from paragraph tags so we can have
-    // different widths inside the content.
-
-    document.querySelectorAll("p img").forEach((image) => {
-      var wrapper = image.parentNode;
-      let children = wrapper.children;
-      let fragment = document.createDocumentFragment();
-
-      Array.from(children).forEach((child) => {
-        fragment.appendChild(child);
-      });
-
-      wrapper.parentNode.replaceChild(fragment, wrapper);
-    });
-  },
-};
-</script>
 
 <style>
 :root {

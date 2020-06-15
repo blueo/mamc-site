@@ -13,20 +13,8 @@
     },
     {
       "text": "Contact us",
-      "link": "mailto:sayhi@mydomain.com",
+      "link": "about-us",
       "position": "right",
-      "external": true
-    },
-    {
-      "text": "News",
-      "link": "/news/",
-      "position": "left",
-      "external": false
-    },
-    {
-      "text": "Events",
-      "link": "/events/",
-      "position": "left",
       "external": false
     }
   ]

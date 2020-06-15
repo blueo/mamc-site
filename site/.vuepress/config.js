@@ -8,7 +8,10 @@ module.exports = {
     footer: config.footer,
     nav: config.navigation,
   },
-  head: [["link", { rel: "icon", href: config.favicon }]],
+  head: [
+    ["link", { rel: "icon", href: config.favicon }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }]
+  ],
   markdown: {
     anchor: {
       permalink: false,
