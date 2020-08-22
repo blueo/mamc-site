@@ -2,7 +2,7 @@
 hero_text: Welcome to <strong>Mount Albert Methodist Church<br><br></strong>
 hero_subtitle: our regular service is at 10am every Sunday
 hero_address: 831 New North Road, Mount Albert
-hero_image: 
+hero_image: media/v1598081745/mamc/media/mainbuilding_qlqere.jpg
 title: Home
 
 ---
