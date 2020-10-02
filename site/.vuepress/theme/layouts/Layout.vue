@@ -3,14 +3,9 @@
     <Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
 
     <!-- Home page content -->
-    <div
-      v-if="$route.path === '/'"
-      :style="{
-        marginTop: '6rem',
-      }"
-    >
+    <main>
       <Content />
-    </div>
+    </main>
 
     <div class="container">
       <!-- about -->
