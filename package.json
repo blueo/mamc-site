@@ -8,10 +8,13 @@
   "license": "MIT",
   "dependencies": {
     "date-fns": "^2.13.0",
-    "vuepress": "^1.2.0",
+    "vue": "^2.6.12",
+    "vuepress": "^1.6.0",
     "webpack-dev-middleware": "3.6.0"
   },
   "devDependencies": {
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.6.12",
     "vuepress-plugin-dehydrate": "^1.1.3"
   }
 }

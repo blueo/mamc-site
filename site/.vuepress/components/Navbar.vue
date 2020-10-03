@@ -22,7 +22,7 @@
     </nav>
 
     <div class="brand">
-      <span class="logo" :title="$site.title">✝</span>
+      <Logo class="logo" />
     </div>
 
     <nav v-if="navLinks" class="navigation right desktop-nav">
@@ -68,6 +68,8 @@
 </template>
 
 <script>
+import Logo from '../public/upload/logo.svg';
+
 export default {
   props: {
     logo: {
@@ -93,6 +95,9 @@ export default {
     toggleMobileNav() {
       this.mobileNavActive = !this.mobileNavActive;
     }
+  },
+  components: {
+    Logo,
   }
 };
 </script>
@@ -111,7 +116,6 @@ export default {
   font-size: 0.8rem;
   font-weight: 600;
   z-index: 10;
-  background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
