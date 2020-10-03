@@ -12,6 +12,7 @@ module.exports = {
     ["link", { rel: "icon", href: config.favicon }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"}]
+    ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"}]
   ],
   markdown: {
     anchor: {
@@ -19,13 +20,6 @@ module.exports = {
     },
   },
   chainWebpack: config => {
-    // config.module.rules.delete('svg')
-    // config.module
-    //   .rule('svg')
-    //   .test(/\.svg$/)
-    //   .use('vue-svg-loader')
-    //     .loader('vue-svg-loader')
-    //     .end()
     const svgRule = config.module.rule('svg');
 
     svgRule.uses.clear();

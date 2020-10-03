@@ -49,9 +49,8 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
   background: #fff;
   color: var(--color-black);
 }
@@ -82,6 +81,15 @@ h6,
 p {
   width: 100%;
   max-width: 800px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat-SemiBold, Montserrat, "Helvetica Neue", sans-serif;
 }
 
 h1 {

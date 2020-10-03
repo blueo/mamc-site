@@ -12,33 +12,19 @@
   >
     <nav v-if="navLinks" class="navigation left desktop-nav">
       <ul>
-        <li v-for="nav in navLinks" :key="nav.text" v-if="nav.position === 'left' && !nav.external">
-          <a :href="nav.link">{{ nav.text }}</a>
-        </li>
-        <li v-for="nav in navLinks" v-if="nav.position === 'left' && nav.external">
-          <a :href="nav.link" target="_blank">{{ nav.text }}</a>
+        <li>
+          <a href="/" class="brand">
+            <Logo class="logo" />
+            MOUNT ALBERT METHODIST CHURCH
+          </a>
         </li>
       </ul>
     </nav>
 
-    <div class="brand">
-      <Logo class="logo" />
-    </div>
-
     <nav v-if="navLinks" class="navigation right desktop-nav">
       <ul>
-        <router-link
-          v-for="nav in navLinks"
-          :key="nav.text"
-          v-if="nav.position === 'right' && !nav.external"
-          tag="li"
-          :to="nav.link"
-          active-class="active"
-          v-text="nav.text"
-          exact
-        />
-        <li v-for="nav in navLinks" v-if="nav.position === 'right' && nav.external">
-          <a :href="nav.link" target="_blank">{{ nav.text }}</a>
+        <li v-for="nav in navLinks" >
+          <a :href="nav.link" >{{ nav.text }}</a>
         </li>
       </ul>
     </nav>
@@ -108,41 +94,47 @@ export default {
   position: relative;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
-  padding-left: 4vw;
-  padding-right: 4vw;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
   font-size: 0.8rem;
   font-weight: 600;
   z-index: 10;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: var(--color-white);
 }
 
 .brand {
   text-align: center;
+  color: var(--color-white);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.brand:visited {
+  color: var(--color-white)
 }
 
 .logo {
-  position: absolute;
   width: 3rem;
   height: 3rem;
-  font-size: 3rem;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin-right: 1rem;
+}
+
+.navigation {
+  height: 3rem;
+  display: flex;
+  align-items: center;
 }
 
 .navigation li {
   display: inline-block;
   list-style: none;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   user-select: none;
   cursor: pointer;
-  border-bottom: 1px solid transparent;
+  font-family: Montserrat-SemiBold,Montserrat;
 }
 
 .navigation li:last-of-type {
