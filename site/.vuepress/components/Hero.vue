@@ -73,6 +73,7 @@ export default {
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+  max-width: 100%;
 }
 
 .title {
