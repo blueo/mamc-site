@@ -72,6 +72,7 @@ export default {
   flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .title {

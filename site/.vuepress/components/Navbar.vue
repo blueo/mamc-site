@@ -98,7 +98,6 @@ export default {
   padding-right: 2vw;
   padding-top: 0.5vw;
   padding-bottom: 0.5vw;
-  font-size: 0.8rem;
   font-weight: 600;
   z-index: 10;
   color: var(--color-white);
@@ -128,8 +127,13 @@ export default {
   align-items: center;
 }
 
+.navigation ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 .navigation li {
-  display: inline-block;
   list-style: none;
   margin-right: 1.5rem;
   user-select: none;
