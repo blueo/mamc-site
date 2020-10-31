@@ -1,16 +1,6 @@
 <template>
-  <header
-    class="header"
-    :style="
-      sticky && {
-        position: 'fixed',
-        top: '0',
-        left: '0',
-        width: '100%',
-      }
-    "
-  >
-    <nav v-if="navLinks" class="navigation left desktop-nav">
+  <header class="header">
+    <nav v-if="navLinks" class="navigation left">
       <ul>
         <li>
           <a href="/" class="brand">
@@ -29,25 +19,19 @@
       </ul>
     </nav>
 
-    <div class="mobile-nav-toggle" @click="toggleMobileNav" />
+    <button class="mobile-nav-toggle" @click="toggleMobileNav">
+      <Burger />
+    </button>
     <div class="mobile-nav" :class="{ 'mobile-nav--active': mobileNavActive }">
       <nav>
-        <ul @click="toggleMobileNav">
-          <router-link
-            v-for="nav in navLinks"
-            :key="nav.text"
-            v-if="!nav.external"
-            tag="li"
-            :to="nav.link"
-            active-class="active"
-            v-text="nav.text"
-            exact
-          />
-          <li v-for="nav in navLinks" v-if="nav.external" @click="toggleMobileNav">
-            <a :href="nav.link" target="_blank">{{ nav.text }}</a>
+        <ul>
+          <li v-for="nav in navLinks">
+            <a :href="nav.link">{{ nav.text }}</a>
           </li>
         </ul>
-        <div class="mobile-nav-close" @click="toggleMobileNav" />
+        <button class="mobile-nav-close" @click="toggleMobileNav">
+          <Close />
+        </button>
       </nav>
     </div>
   </header>
@@ -55,6 +39,8 @@
 
 <script>
 import Logo from '../public/upload/logo.svg';
+import Burger from '../public/burger.svg';
+import Close from '../public/close.svg';
 
 export default {
   props: {
@@ -84,19 +70,25 @@ export default {
   },
   components: {
     Logo,
+    Burger,
+    Close,
   }
 };
 </script>
 
 <style scoped>
 .header {
+  position: absolute;
+  top: 0px; 
+  left: 0px; 
+  width: 100%;
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 0.5vw;
+  padding-top: 1.5rem;
   padding-bottom: 0.5vw;
   font-weight: 600;
   z-index: 10;
@@ -104,21 +96,43 @@ export default {
 }
 
 .brand {
-  text-align: center;
   color: var(--color-white);
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  margin-right: 1rem;
+  font-size: 1rem;
 }
 
 .brand:visited {
   color: var(--color-white)
 }
 
+@media screen and (min-width: 600px) {
+  .brand {
+    text-align: center;
+    white-space: normal;
+    font-size: 1.5rem;
+  }
+}
+
 .logo {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   margin-right: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .logo {
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-right: 1.6rem;
+  }
+}
+
+nav li {
+  font-family: Montserrat-SemiBold,Montserrat;
 }
 
 .navigation {
@@ -138,15 +152,10 @@ export default {
   margin-right: 1.5rem;
   user-select: none;
   cursor: pointer;
-  font-family: Montserrat-SemiBold,Montserrat;
 }
 
 .navigation li:last-of-type {
   margin: 0;
-}
-
-.navigation li:hover {
-  border-bottom: 1px solid #000;
 }
 
 .active {
@@ -160,7 +169,13 @@ a {
 
 a:active {
   color: inherit;
+  text-decoration: underline;
 }
+
+a:hover {
+  text-decoration: underline
+}
+
 a:visited {
   color: inherit;
 }
@@ -170,7 +185,6 @@ a:visited {
 }
 
 .mobile-nav {
-  display: block;
   position: absolute;
   background: #ffffff;
   top: 0;
@@ -183,15 +197,22 @@ a:visited {
   text-align: center;
   font-size: 2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   line-height: 2;
+}
+
+.mobile-nav nav {
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-nav li {
   list-style: none;
   cursor: pointer;
   transition: opacity 0.15s;
+  color: var(--color-black);
 }
 
 .mobile-nav li:hover {
@@ -204,30 +225,31 @@ a:visited {
 
 .mobile-nav-close {
   position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
+  right: 1rem;
+  top: 1rem;
   width: 3rem;
   height: 3rem;
-  padding: 3rem;
-  background-image: url("/close.svg");
-  background-position: center;
-  background-size: 1.5rem;
-  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
   transition: opacity 0.15s;
   cursor: pointer;
 }
 
 .mobile-nav-toggle {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 3rem;
   height: 3rem;
-  background-image: url("/burger.svg");
-  background-position: center;
-  background-size: 1.5rem;
-  background-repeat: no-repeat;
   transition: opacity 0.15s;
   cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.mobile-nav-toggle svg g {
+  fill: var(--color-bluegreen);
 }
 
 .mobile-nav-toggle:hover,

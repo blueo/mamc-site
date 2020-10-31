@@ -6,8 +6,8 @@
       </picture>
       <figcaption class="hero-figcaption">
         <h1 v-if="text" class="title" v-html="text" />
-        <h2 v-if="subtitle" class="subtitle" v-html="subtitle" />
-        <h3 v-if="address" class="address" v-html="address" />
+        <p v-if="subtitle" class="subtitle" v-html="subtitle" />
+        <p v-if="address" class="address" v-html="address" />
         <form class="map-form" action="https://goo.gl/maps/tyzoLaZBJoVQHV9Y6" target="_blank" rel="noopener">
           <button class="map-button" type="submit">
             Directions
@@ -139,9 +139,8 @@ export default {
 .map-button {
   /* icon from https://iconmonstr.com/location-24-svg/ */
   color: var(--color-black);
-  background-color: var(--color-white);
+  background-color: var(--color-bluegreen);
   border: none;
-  border-radius: 8px;
   padding: 14px;
   cursor: pointer;
   font-weight: bold;

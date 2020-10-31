@@ -24,6 +24,7 @@
 :root {
   --color-black: #1c1c1c;
   --color-white: #ffffff;
+  --color-bluegreen: #12C1BE;
   --color-highlight: rgba(249, 233, 172, 0.99);
 }
 
@@ -48,9 +49,13 @@
   color: var(--color-black);
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Playfair Display', serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   background: #fff;
   color: var(--color-black);
 }
