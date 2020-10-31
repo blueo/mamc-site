@@ -1,7 +1,9 @@
 <template>
   <section>
     <figure class="hero-fig">
-      <img v-bind:src="heroImage"/>
+      <picture>
+        <img v-bind:src="heroImage" v-bind:srcset="heroSrcSet" sizes="100vw"/>
+      </picture>
       <figcaption class="hero-figcaption">
         <h1 v-if="text" class="title" v-html="text" />
         <h2 v-if="subtitle" class="subtitle" v-html="subtitle" />
@@ -39,7 +41,16 @@ export default {
   },
   computed: {
     heroImage: (v) => {
-      return `https://res.cloudinary.com/dxbnubbez/c_crop,h_500,w_2000${v.image}`
+      // default image size -> fallback to 2000px if srcset not supported
+      return `https://res.cloudinary.com/dxbnubbez/c_scale,w_2000${v.image}`
+    },
+    heroSrcSet: (v) => {
+      // responsive image sizes
+      const sets =  [2000, 1800, 1600, 1400, 1200, 1000, 800, 600, 400].map((w) => {
+        return `https://res.cloudinary.com/dxbnubbez/c_scale,w_${w}${v.image} ${w}w`;
+      });
+      
+      return sets.join(', ');
     }
   }
 };
@@ -55,14 +66,29 @@ export default {
   justify-content: center;
   position: relative;
   background-color: black; /** no var used as only for img opacity */
+  overflow: hidden;
 }
 
-.hero-fig img {
+.hero-fig picture {
   position: absolute;
+  object-fit: cover;
   height: 100%;
+}
+
+.hero-fig picture img {
+  height: 100%;
+  width: auto;
+  max-width: none;
   opacity: 0.7;
   margin: 0px;
 }
+
+@media screen and (min-width: 600px) {
+  .hero-fig picture img {
+    height: auto;
+  }
+}
+
 
 .hero-figcaption {
   color: var(--color-white);
