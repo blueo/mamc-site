@@ -6,9 +6,3 @@ hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 
 ---
-<Hero
-    :text="$page.frontmatter.hero_text"
-    :subtitle="$page.frontmatter.hero_subtitle"
-    :address="$page.frontmatter.hero_address"
-    :image="$page.frontmatter.hero_image"
-/>

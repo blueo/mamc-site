@@ -2,9 +2,16 @@
   <div class="wrapper">
     <Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
 
-    <!-- Home page content -->
-    <main>
-      <Content />
+   
+    <main v-if="$route.path === '/'">
+       <!-- Home page content -->
+      <Hero
+          :text="$page.frontmatter.hero_text"
+          :subtitle="$page.frontmatter.hero_subtitle"
+          :address="$page.frontmatter.hero_address"
+          :image="$page.frontmatter.hero_image"
+      />
+      <MediaBlock />
     </main>
 
     <div class="container">
