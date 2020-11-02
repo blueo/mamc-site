@@ -11,6 +11,7 @@
           :address="$page.frontmatter.hero_address"
           :image="$page.frontmatter.hero_image"
       />
+      <Blocks :blocks="$page.frontmatter.home_page_blocks"/>
       <MediaBlock />
     </main>
 
@@ -25,6 +26,18 @@
     <!-- <Footer /> -->
   </div>
 </template>
+
+<script>
+import MediaBlock from '../../components/blocks/MediaBlock.vue';
+import Blocks from '../../components/blocks/Blocks.vue';
+
+export default {
+  components: {
+    MediaBlock,
+    Blocks,
+  },
+};
+</script>
 
 
 <style>
