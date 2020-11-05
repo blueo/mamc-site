@@ -2,17 +2,17 @@
   <div class="wrapper">
     <Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
 
-   
     <main v-if="$route.path === '/'">
-       <!-- Home page content -->
+      <!-- Home page content -->
       <Hero
-          :text="$page.frontmatter.hero_text"
-          :subtitle="$page.frontmatter.hero_subtitle"
-          :address="$page.frontmatter.hero_address"
-          :image="$page.frontmatter.hero_image"
+        :text="$page.frontmatter.hero_text"
+        :subtitle="$page.frontmatter.hero_subtitle"
+        :address="$page.frontmatter.hero_address"
+        :image="$page.frontmatter.hero_image"
       />
-      <Blocks :blocks="$page.frontmatter.home_page_blocks"/>
-      <MediaBlock />
+      <div class="container">
+        <Blocks :blocks="$page.frontmatter.home_page_blocks" />
+      </div>
     </main>
 
     <div class="container">
@@ -20,7 +20,6 @@
       <div v-if="$route.path === '/about-us/'">
         <Content />
       </div>
-
     </div>
 
     <!-- <Footer /> -->
@@ -28,8 +27,8 @@
 </template>
 
 <script>
-import MediaBlock from '../../components/blocks/MediaBlock.vue';
-import Blocks from '../../components/blocks/Blocks.vue';
+import MediaBlock from "../../components/blocks/MediaBlock.vue";
+import Blocks from "../../components/blocks/Blocks.vue";
 
 export default {
   components: {
@@ -40,11 +39,11 @@ export default {
 </script>
 
 
-<style>
+<style lang="stylus">
 :root {
   --color-black: #1c1c1c;
   --color-white: #ffffff;
-  --color-bluegreen: #12C1BE;
+  --color-bluegreen: #12c1be;
   --color-highlight: rgba(249, 233, 172, 0.99);
 }
 
@@ -87,8 +86,10 @@ img {
   margin: 2rem 0;
 }
 
-.container {
-  padding: 0 5vw;
+@media screen and (min-width: $breakpoint-desktop) {
+  .container {
+    padding: 0 5vw;
+  }
 }
 
 .news-list {
@@ -97,24 +98,13 @@ img {
   margin: 0 auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
   width: 100%;
-  max-width: 800px;
+  max-width: 60ch;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Montserrat-SemiBold, Montserrat, "Helvetica Neue", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat-SemiBold, Montserrat, 'Helvetica Neue', sans-serif;
 }
 
 h1 {
