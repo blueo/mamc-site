@@ -30,3 +30,21 @@ fields:
     max: 200
   label: Image description
   description: 'short description of the image for accessiblility '
+- name: call_to_action
+  type: field_group
+  config: {}
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+    description: button text
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+    description: link for button eg https://mamc.church
+  label: Call to action
+  description: the settings for an optional button on the media block

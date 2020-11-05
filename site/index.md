@@ -16,5 +16,8 @@ home_page_blocks:
     rather displeased by her staying at home.
   image: "/v1598081745/mamc/media/mainbuilding_qlqere.jpg"
   image_description: MAMC building from New North Road
+  call_to_action:
+    text: Learn more
+    link: "/about-us"
 
 ---
