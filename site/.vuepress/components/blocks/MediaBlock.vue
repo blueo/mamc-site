@@ -1,22 +1,32 @@
 <template>
-  <section class="media-block">
-    <div class="content">
-      <h2 v-if="title">{{ title }}</h2>
-      <p>
-        {{ content }}
-      </p>
+  <div class="row-dark">
+    <div class="container">
+      <section class="media-block">
+        <div class="content">
+          <h2 v-if="title">{{ title }}</h2>
+          <p>
+            {{ content }}
+          </p>
+          <a
+            class="button button-dark"
+            v-if="call_to_action"
+            v-bind:href="call_to_action.link"
+            >{{ call_to_action.text }}</a
+          >
+        </div>
+        <figure class="fig">
+          <picture
+            ><img
+              v-bind:alt="image_description"
+              v-bind:src="imageSrc"
+              v-bind:srcset="imageSrcSet"
+              sizes="100vw, 45vw"
+            />
+          </picture>
+        </figure>
+      </section>
     </div>
-    <figure class="fig">
-      <picture
-        ><img
-          v-bind:alt="image_description"
-          v-bind:src="imageSrc"
-          v-bind:srcset="imageSrcSet"
-          sizes="100vw, 45vw"
-        />
-      </picture>
-    </figure>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -34,6 +44,9 @@ export default {
     },
     image_description: {
       type: String,
+    },
+    call_to_action: {
+      type: Object,
     },
   },
   computed: {
@@ -71,12 +84,17 @@ export default {
 }
 
 .content {
-  padding: 1rem min(12vw, 6rem);
+  padding: 2rem min(12vw, 6rem);
   text-align: center;
 }
 
 .content p {
   font-size: 1.5rem;
+  color: var(--color-white);
+}
+
+.content h2 {
+  color: var(--color-bluegreen);
 }
 
 .fig {
@@ -98,5 +116,9 @@ export default {
   width: auto;
   max-width: none;
   margin: 0px;
+}
+
+.button {
+  margin-top: 2rem;
 }
 </style>

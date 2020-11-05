@@ -10,9 +10,8 @@
         :address="$page.frontmatter.hero_address"
         :image="$page.frontmatter.hero_image"
       />
-      <div class="container">
-        <Blocks :blocks="$page.frontmatter.home_page_blocks" />
-      </div>
+
+      <Blocks :blocks="$page.frontmatter.home_page_blocks" />
     </main>
 
     <div class="container">
@@ -41,7 +40,7 @@ export default {
 
 <style lang="stylus">
 :root {
-  --color-black: #1c1c1c;
+  --color-black: #333333;
   --color-white: #ffffff;
   --color-bluegreen: #12c1be;
   --color-highlight: rgba(249, 233, 172, 0.99);
@@ -88,7 +87,9 @@ img {
 
 @media screen and (min-width: $breakpoint-desktop) {
   .container {
-    padding: 0 5vw;
+    // padding: 0 5vw;
+    max-width: 1500px;
+    margin: 0 auto;
   }
 }
 
@@ -104,7 +105,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Montserrat-SemiBold, Montserrat, 'Helvetica Neue', sans-serif;
+  font-family: $font-family-heading;
 }
 
 h1 {
@@ -144,5 +145,22 @@ code {
   font-size: 0.8rem;
   padding: 0.05rem 0.25rem;
   font-weight: 400;
+}
+
+.row-dark {
+  background-color: var(--color-black);
+}
+
+// button for dark backgrounds
+.button-dark {
+  color: var(--color-bluegreen);
+  padding: 2rem 2rem;
+  border: var(--color-bluegreen) 2px solid;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: $font-family-heading;
+  display: inline-block;
 }
 </style>
