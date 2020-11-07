@@ -19,5 +19,9 @@ home_page_blocks:
   call_to_action:
     text: Learn more
     link: "/about-us"
+- template: call-to-action-block
+  content: Services & Upcoming Event
+  button_text: Learn More
+  button_link: "/services-and-events"
 
 ---
