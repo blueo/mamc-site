@@ -151,11 +151,29 @@ code {
   background-color: var(--color-black);
 }
 
+.row-green {
+  background-color: var(--color-bluegreen);
+}
+
 // button for dark backgrounds
 .button-dark {
   color: var(--color-bluegreen);
   padding: 2rem 2rem;
   border: var(--color-bluegreen) 2px solid;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: $font-family-heading;
+  display: inline-block;
+}
+
+// button for green backgrounds
+.button-green {
+  color: var(--color-black);
+  background-color: var(--color-bluegreen);
+  padding: 2rem 2rem;
+  border: var(--color-black) 2px solid;
   font-size: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
