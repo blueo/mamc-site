@@ -35,6 +35,7 @@ fields:
   type: blocks
   template_types:
   - media-block
+  - call-to-action-block
   config:
     min: 
     max: 
