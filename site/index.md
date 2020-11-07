@@ -20,7 +20,7 @@ home_page_blocks:
     text: Learn more
     link: "/about-us"
 - template: call-to-action-block
-  content: Services & Upcoming Event
+  content: Services & Upcoming Events
   button_text: Learn More
   button_link: "/services-and-events"
 
