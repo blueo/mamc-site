@@ -21,7 +21,13 @@
       </div>
     </div>
 
-    <!-- <Footer /> -->
+    <Footer
+      :footer_title="$page.frontmatter.footer_title"
+      :footer_address="$page.frontmatter.footer_address"
+      :footer_address_link="$page.frontmatter.footer_address_link"
+      :footer_phone="$page.frontmatter.footer_phone"
+      :footer_email="$page.frontmatter.footer_email"
+    />
   </div>
 </template>
 

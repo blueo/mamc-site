@@ -8,6 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "date-fns": "^2.13.0",
+    "email-obfuscate": "0.0.6",
     "vue": "^2.6.12",
     "vuepress": "^1.6.0",
     "webpack-dev-middleware": "3.6.0"
