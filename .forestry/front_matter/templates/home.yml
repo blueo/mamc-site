@@ -41,5 +41,10 @@ fields:
     max: 
   label: Home page blocks
   description: Choose sections to display on the home page
+- name: footer
+  type: include
+  config: {}
+  template: footer
+  label: Footer
 pages:
 - site/index.md
