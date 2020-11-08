@@ -27,5 +27,10 @@ address: 831 New North Road, Mount Albert
 address_link: https://goo.gl/maps/tyzoLaZBJoVQHV9Y6
 phone: '09-849 5174'
 email: test@mamc.church
+footer_title: Contact us
+footer_address: 831 New North Road, Mount Albert
+footer_address_link: https://goo.gl/maps/tyzoLaZBJoVQHV9Y6
+footer_phone: '09-849 5174'
+footer_email: test@mamc.church
 
 ---
