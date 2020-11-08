@@ -23,5 +23,9 @@ home_page_blocks:
   content: Services & Upcoming Events
   button_text: Learn More
   button_link: "/services-and-events"
+address: 831 New North Road, Mount Albert
+address_link: https://goo.gl/maps/tyzoLaZBJoVQHV9Y6
+phone: '09-849 5174'
+email: test@mamc.church
 
 ---
