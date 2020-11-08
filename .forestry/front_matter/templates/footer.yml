@@ -2,28 +2,28 @@
 label: Footer
 hide_body: true
 fields:
-- name: title
+- name: footer_title
   type: text
   config:
     required: true
   label: Title
-- name: address
+- name: footer_address
   type: text
   config:
     required: true
   label: Address
-- name: address_link
+- name: footer_address_link
   type: text
   config:
     required: true
   label: Address Link
   description: link to google maps for the address
-- name: phone
+- name: footer_phone
   type: text
   config:
     required: true
   label: Phone
-- name: email
+- name: footer_email
   type: text
   config:
     required: true
