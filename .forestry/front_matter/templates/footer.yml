@@ -1,4 +1,30 @@
 ---
 label: Footer
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: address
+  type: text
+  config:
+    required: true
+  label: Address
+- name: address_link
+  type: text
+  config:
+    required: true
+  label: Address Link
+  description: link to google maps for the address
+- name: phone
+  type: text
+  config:
+    required: true
+  label: Phone
+- name: email
+  type: text
+  config:
+    required: true
+  label: Email
