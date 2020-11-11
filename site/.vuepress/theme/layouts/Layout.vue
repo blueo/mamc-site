@@ -153,6 +153,12 @@ code {
   font-weight: 400;
 }
 
+textarea, input {
+  font-size: 1.4rem;
+  font-family: Montserrat, 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+}
+
 .row-dark {
   background-color: var(--color-black);
 }
@@ -164,6 +170,20 @@ code {
 // button for dark backgrounds
 .button-dark {
   color: var(--color-bluegreen);
+  padding: 2rem 2rem;
+  border: var(--color-bluegreen) 2px solid;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: $font-family-heading;
+  display: inline-block;
+}
+
+// solid button for dark backgrounds
+.button-important {
+  color: var(--color-black);
+  background-color: var(--color-bluegreen);
   padding: 2rem 2rem;
   border: var(--color-bluegreen) 2px solid;
   font-size: 1.5rem;

@@ -11,7 +11,7 @@
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-phone"></i></span>
-              {{ footer_phone }}
+              <a v-bind:href="phoneLink">{{ footer_phone }}</a>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-envelope"></i></span>
@@ -26,7 +26,7 @@
           <label>
             <textarea placeholder="Message" required maxlength="500" />
           </label>
-          <button type="submit">Send</button>
+          <button class="button button-important" type="submit">Send</button>
         </form>
       </footer>
     </div>
@@ -40,19 +40,24 @@ export default {
   props: {
     footer_address: {
       type: String,
-      // required: true,
+      required: true,
     },
     footer_address_link: {
       type: String,
-      // required: true,
+      required: true,
     },
     footer_phone: {
       type: String,
-      // required: true,
+      required: true,
     },
     footer_email: {
       type: String,
-      // required: true,
+      required: true,
+    },
+  },
+  computed: {
+    phoneLink(v) {
+      return `tel:${v.footer_phone}`;
     },
   },
   mounted() {
@@ -61,8 +66,21 @@ export default {
   methods: {
     getEmail() {
       const ref = this.$refs.email;
+      const regex = new RegExp(
+        "([\\w\\d._%+-]+)@([\\w\\d-]+)\\.([\\w\\d-]+)?\\.?(\\w+)?"
+      );
+
+      let [original, ...matches] = this.$props.footer_email.match(regex);
+      matches = matches.filter((a) => a);
+      const name = matches.shift();
+      const tld = matches.pop();
+      const domain = matches.join(".");
+
       new EmailObfuscator(ref, {
-        name: this.footer_email,
+        name,
+        domain,
+        tld,
+        altText: "Email MAMC",
       });
     },
   },
@@ -72,15 +90,44 @@ export default {
 <style lang="stylus" scoped>
 footer {
   display: grid;
-  grid-template-columns: repeat(2, min(750px, 1fr));
+  grid-template-columns: min(750px, 1fr);
   justify-content: center;
   color: var(--color-white);
+  padding-bottom: 5rem;
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  footer {
+    grid-template-columns: repeat(2, min(750px, 1fr));
+  }
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .info {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   text-align: left;
   padding: 1.5rem;
+}
+
+.info h3 {
+  margin: 2rem 1rem;
+}
+
+.info li {
+  margin-bottom: 1rem;
+}
+
+.info i {
+  color: var(--color-bluegreen);
+}
+
+.info a {
+  text-decoration: none;
+  color: var(--color--white);
 }
 
 form {
@@ -88,5 +135,24 @@ form {
   flex-direction: column;
   align-items: stretch;
   padding: 1.5rem;
+}
+
+form h3 {
+  margin: 2rem 0rem;
+}
+
+form label, form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.2rem;
+}
+
+form input, form textarea {
+  padding: 0.5rem;
+}
+
+.button {
+  font-size: 1.4rem;
+  padding: 0.5rem;
 }
 </style>
