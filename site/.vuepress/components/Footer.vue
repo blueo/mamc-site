@@ -21,10 +21,19 @@
         </div>
         <form name="contact" method="POST" data-netlify="true">
           <h3>Send us a message</h3>
-          <label><input type="text" placeholder="Name" required /></label>
-          <label><input type="email" placeholder="Email" required /></label>
+          <label
+            ><input type="text" name="name" placeholder="Name" required
+          /></label>
+          <label
+            ><input type="email" name="email" placeholder="Email" required
+          /></label>
           <label>
-            <textarea placeholder="Message" required maxlength="500" />
+            <textarea
+              placeholder="Message"
+              name="message"
+              required
+              maxlength="500"
+            />
           </label>
           <button class="button button-important" type="submit">Send</button>
         </form>
