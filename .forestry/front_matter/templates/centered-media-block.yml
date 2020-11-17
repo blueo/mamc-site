@@ -1,0 +1,51 @@
+---
+label: Centered Media Block
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: title
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  description: the centered media block will not display correctly without an image
+- name: image_description
+  type: text
+  config:
+    required: true
+    max: 200
+  label: Image description
+  description: 'short description of the image for accessiblility '
+- name: call_to_action
+  type: field_group
+  config: {}
+  description: 'button below image'
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+    description: button text
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+    description: link for button eg https://mamc.church
+  label: Call to action
+  description: the settings for an optional button

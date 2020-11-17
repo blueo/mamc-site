@@ -36,6 +36,7 @@ fields:
   template_types:
   - media-block
   - call-to-action-block
+  - centered-media-block
   config:
     min: 
     max: 
