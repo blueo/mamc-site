@@ -40,7 +40,9 @@
               maxlength="500"
             />
           </label>
-          <div data-netlify-recaptcha="true"></div>
+          <div class="recaptcha">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
           <button class="button button-important" type="submit">Send</button>
         </form>
       </footer>
@@ -164,6 +166,11 @@ form label, form input, form textarea {
 
 form input, form textarea {
   padding: 0.5rem;
+}
+
+.recaptcha {
+  display: flex;
+  justify-content: center;
 }
 
 .button {
