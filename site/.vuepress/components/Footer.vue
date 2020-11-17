@@ -15,11 +15,11 @@
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-envelope"></i></span>
-              <clent-only><span ref="email"></span></clent-only>
+              <span ref="email"></span>
             </li>
           </ul>
         </div>
-        <clent-only>
+        <client-only>
           <form
             name="contact"
             method="POST"
@@ -46,7 +46,7 @@
             </div>
             <button class="button button-important" type="submit">Send</button>
           </form>
-        </clent-only>
+        </client-only>
       </footer>
     </div>
   </div>
