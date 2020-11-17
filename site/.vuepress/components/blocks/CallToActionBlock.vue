@@ -3,9 +3,9 @@
     <div class="container">
       <section class="call-to-action-block">
         <span class="content">{{ content }}</span>
-        <button class="button button-green" v-bind:href="button_link">
+        <a class="button button-green" v-bind:href="button_link">
           {{ button_text }}
-        </button>
+        </a>
       </section>
     </div>
   </div>
