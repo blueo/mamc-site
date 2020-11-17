@@ -33,7 +33,7 @@ fields:
 - name: call_to_action
   type: field_group
   config: {}
-  description: 'button below image'
+  description: the settings for an optional button
   fields:
   - name: text
     type: text
@@ -48,4 +48,3 @@ fields:
     label: Link
     description: link for button eg https://mamc.church
   label: Call to action
-  description: the settings for an optional button
