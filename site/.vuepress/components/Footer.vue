@@ -15,7 +15,7 @@
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-envelope"></i></span>
-              <span ref="email"></span>
+              <clent-only><span ref="email"></span></clent-only>
             </li>
           </ul>
         </div>
