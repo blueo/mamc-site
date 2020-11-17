@@ -19,7 +19,12 @@
             </li>
           </ul>
         </div>
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
           <h3>Send us a message</h3>
           <label
             ><input type="text" name="name" placeholder="Name" required
@@ -35,6 +40,7 @@
               maxlength="500"
             />
           </label>
+          <div data-netlify-recaptcha="true"></div>
           <button class="button button-important" type="submit">Send</button>
         </form>
       </footer>
