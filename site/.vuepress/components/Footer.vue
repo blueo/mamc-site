@@ -19,33 +19,26 @@
             </li>
           </ul>
         </div>
-
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-        >
-          <h3>Send us a message</h3>
-          <label
-            ><input type="text" name="name" placeholder="Name" required
-          /></label>
-          <label
-            ><input type="email" name="email" placeholder="Email" required
-          /></label>
-          <label>
-            <textarea
-              placeholder="Message"
-              name="message"
-              required
-              maxlength="500"
-            />
-          </label>
-          <div class="recaptcha">
-            <client-only><div data-netlify-recaptcha="true"></div></client-only>
-          </div>
-          <button class="button button-important" type="submit">Send</button>
-        </form>
+        <client-only>
+          <form name="contact" method="POST" data-netlify="true">
+            <h3>Send us a message</h3>
+            <label
+              ><input type="text" name="name" placeholder="Name" required
+            /></label>
+            <label
+              ><input type="email" name="email" placeholder="Email" required
+            /></label>
+            <label>
+              <textarea
+                placeholder="Message"
+                name="message"
+                required
+                maxlength="500"
+              />
+            </label>
+            <button class="button button-important" type="submit">Send</button>
+          </form>
+        </client-only>
       </footer>
     </div>
   </div>
@@ -167,11 +160,6 @@ form label, form input, form textarea {
 
 form input, form textarea {
   padding: 0.5rem;
-}
-
-.recaptcha {
-  display: flex;
-  justify-content: center;
 }
 
 .button {
