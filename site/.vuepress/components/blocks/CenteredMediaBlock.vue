@@ -1,7 +1,7 @@
 <template>
-  <div class="row-dark">
+  <div class="row">
     <div class="container">
-      <section class="media-block">
+      <section class="centred-media-block">
         <div class="content">
           <h2 v-if="title">{{ title }}</h2>
           <p>
@@ -20,7 +20,7 @@
               v-bind:alt="image_description"
               v-bind:src="imageSrc"
               v-bind:srcset="imageSrcSet"
-              sizes="(min-width: 1000px) min(50vw, 750px), 100vw, "
+              sizes="(max-width: 1000px) calc(100vw - 1rem), 1000px"
               loading="lazy"
             />
           </picture>
@@ -57,80 +57,41 @@ export default {
     },
     imageSrcSet: (v) => {
       // responsive image sizes
-      const sets = [2000, 1800, 1600, 1400, 1200, 1000, 800, 600, 400].map(
-        (w) => {
-          return `https://res.cloudinary.com/dxbnubbez/c_scale,w_${w}${v.image} ${w}w`;
-        }
-      );
+      const sets = [1600, 1400, 1200, 1000, 800, 600, 400].map((w) => {
+        return `https://res.cloudinary.com/dxbnubbez/c_scale,w_${w}${v.image} ${w}w`;
+      });
 
       return sets.join(", ");
     },
   },
 };
 </script>
+
 <style lang="stylus" scoped>
-.media-block {
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (min-width: $breakpoint-large) {
-  .media-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.content {
-  padding: 2rem min(12vw, 6rem);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.content p {
-  font-size: 1.5rem;
-  color: var(--color-white);
-}
-
-.content h2 {
+h2 {
   color: var(--color-bluegreen);
 }
 
-.fig {
+.centred-media-block {
   display: flex;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  min-height: 100vw;
+  flex-direction: column;
 }
 
-.fig picture {
-  position: absolute;
-  object-fit: cover;
-  height: 100%;
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
-.fig picture img {
-  height: 100%;
-  width: auto;
-  max-width: none;
-  margin: 0px;
+figure {
+  margin: 1.5rem 0.5rem;
+  max-width: 1000px;
 }
 
-@media screen and (min-width: $breakpoint-large) {
-  .fig {
-    min-height: Min(690px, 50vw);
+@media screen and (min-width: $breakpoint-desktop) {
+  figure {
+    margin: 1.5rem auto;
   }
-
-  .fig picture {
-    height: Min(690px, 50vw);
-  }
-}
-
-.button {
-  margin-top: 2rem;
 }
 </style>

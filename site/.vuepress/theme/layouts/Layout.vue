@@ -115,26 +115,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4.8rem;
   line-height: 1.15;
   font-weight: 300;
   margin: 0 auto 3rem auto;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 300;
   margin: 2rem auto 2rem auto;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin: 2rem auto 1rem auto;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   margin: 1rem auto 2rem auto;
 }
