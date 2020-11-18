@@ -19,6 +19,10 @@ home_page_blocks:
   call_to_action:
     text: Learn more
     link: "/about-us"
+- template: call-to-action-block
+  content: Services & Upcoming Events
+  button_text: Learn More
+  button_link: "/services-and-events"
 - template: centered-media-block
   title: Mount Albert Methodist Church Choir
   content: We were fatigued by the contest, which was produced by my want of caution;
@@ -30,10 +34,6 @@ home_page_blocks:
   call_to_action:
     text: Learn more
     link: "/choir"
-- template: call-to-action-block
-  content: Services & Upcoming Events
-  button_text: Learn More
-  button_link: "/services-and-events"
 footer_title: Contact us
 footer_address: 831 New North Road, Mount Albert
 footer_address_link: https://goo.gl/maps/tyzoLaZBJoVQHV9Y6
