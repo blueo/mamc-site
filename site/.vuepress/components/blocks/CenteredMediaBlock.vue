@@ -7,12 +7,6 @@
           <p>
             {{ content }}
           </p>
-          <a
-            class="button button-dark"
-            v-if="call_to_action"
-            v-bind:href="call_to_action.link"
-            >{{ call_to_action.text }}</a
-          >
         </div>
         <figure class="fig">
           <picture
@@ -25,6 +19,14 @@
             />
           </picture>
         </figure>
+        <div class="cta">
+          <a
+            class="button button-dark"
+            v-if="call_to_action"
+            v-bind:href="call_to_action.link"
+            >{{ call_to_action.text }}</a
+          >
+        </div>
       </section>
     </div>
   </div>
@@ -93,5 +95,11 @@ figure {
   figure {
     margin: 1.5rem auto;
   }
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 </style>

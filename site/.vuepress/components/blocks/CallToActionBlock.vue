@@ -37,6 +37,7 @@ export default {
   align-items: center;
   padding: 2rem;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .call-to-action-block > * {
