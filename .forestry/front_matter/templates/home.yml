@@ -4,11 +4,12 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
-  hidden: true
+  label: Meta title
+  hidden: false
+  description: name of the page for search engines
 - type: textarea
   name: hero_text
-  label: Main text
+  label: Main Title
   config:
     wysiwyg: true
     schema:
@@ -47,5 +48,6 @@ fields:
   config: {}
   template: footer
   label: Footer
+  hidden: true
 pages:
 - site/index.md
