@@ -34,10 +34,10 @@ home_page_blocks:
   call_to_action:
     text: Learn more
     link: "/choir"
-footer_title: Contact us
-footer_address: 831 New North Road, Mount Albert
-footer_address_link: https://goo.gl/maps/tyzoLaZBJoVQHV9Y6
-footer_phone: '09-849 5174'
-footer_email: test@mamc.church
+footer_title: ''
+footer_address: ''
+footer_address_link: ''
+footer_phone: ''
+footer_email: ''
 
 ---
