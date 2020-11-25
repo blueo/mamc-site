@@ -9,7 +9,8 @@ hero_image: "/v1602139845/mamc/media/church_in_session_tkzcyg.jpg"
 page_blocks:
 - template: content-block
   title: About us content
-  content: Here you can put **formatted** content - but hopefully not images
+  content: "<p>Here you can put <strong>formatted</strong> content - but be careful
+    when adding images</p>"
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
