@@ -9,6 +9,10 @@ sections:
   label: Homepage
   templates:
   - settings
+- type: document
+  path: about-us/index.md
+  label: About us
+  match: "**/*"
 - type: directory
   path: site/news
   label: News
