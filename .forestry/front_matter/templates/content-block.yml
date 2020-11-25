@@ -5,7 +5,7 @@ fields:
 - name: title
   type: text
   config:
-    required: true
+    required: false
   label: Title
   description: title
 - name: content
@@ -14,5 +14,5 @@ fields:
     required: true
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Content
