@@ -10,7 +10,7 @@ sections:
   templates:
   - settings
 - type: document
-  path: about-us/index.md
+  path: site/about-us/index.md
   label: About us
 - type: directory
   path: site/news
