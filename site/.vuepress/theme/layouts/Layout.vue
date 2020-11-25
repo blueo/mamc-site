@@ -14,12 +14,17 @@
       <Blocks :blocks="$page.frontmatter.home_page_blocks" />
     </main>
 
-    <div class="container">
-      <!-- about -->
-      <div v-if="$route.path === '/about-us/'">
-        <Content />
-      </div>
-    </div>
+    <main v-if="$route.path !== '/'">
+      <!-- Page content -->
+      <Hero
+        :text="$page.frontmatter.hero_text"
+        :subtitle="$page.frontmatter.hero_subtitle"
+        :address="$page.frontmatter.hero_address"
+        :image="$page.frontmatter.hero_image"
+      />
+
+      <Blocks :blocks="$page.frontmatter.page_blocks" />
+    </main>
 
     <Footer
       :footer_title="$page.frontmatter.footer_title"
@@ -32,12 +37,10 @@
 </template>
 
 <script>
-import MediaBlock from "../../components/blocks/MediaBlock.vue";
 import Blocks from "../../components/blocks/Blocks.vue";
 
 export default {
   components: {
-    MediaBlock,
     Blocks,
   },
 };

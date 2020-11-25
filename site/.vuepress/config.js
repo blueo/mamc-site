@@ -1,4 +1,19 @@
 const config = require("../config.json");
+const matter = require('gray-matter');
+const glob = require('glob');
+const files = glob.sync('./.forestry/front_matter/templates/*.yml');
+const path = require('path');
+const keyBy = require('lodash/keyBy');
+const templates = files.map((file) => {
+  const fileName = path.basename(file, '.yml');
+  const config = matter.read(file);
+  return {
+    fileName,
+    ...config
+  };
+})
+const contentTemplates = keyBy(templates,'fileName');
+
 module.exports = {
   title: config.title,
   description: config.description,
@@ -7,6 +22,7 @@ module.exports = {
     logo: config.logo,
     footer: config.footer,
     nav: config.navigation,
+    contentTemplates,
   },
   head: [
     ["link", { rel: "icon", href: config.favicon }],

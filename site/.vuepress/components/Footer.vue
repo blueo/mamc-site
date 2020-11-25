@@ -7,11 +7,11 @@
           <ul class="fa-ul">
             <li>
               <span class="fa-li"><i class="fas fa-map-marker-alt"></i></span>
-              <a v-bind:href="footer_address_link">{{ footer_address }}</a>
+              <a v-bind:href="addressLink">{{ address }}</a>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-phone"></i></span>
-              <a v-bind:href="phoneLink">{{ footer_phone }}</a>
+              <a v-bind:href="phoneLink">{{ phone }}</a>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-envelope"></i></span>
@@ -46,42 +46,69 @@
 
 <script>
 import EmailObfuscator from "email-obfuscate";
+import { keyBy, partial } from "lodash";
+
+function getPropOrDefault(template, field) {
+  const value = this[field];
+  if (value) {
+    return value;
+  }
+  const templates = this.$themeConfig.contentTemplates;
+  // get defaults from config
+  const {
+    data: { fields },
+  } = templates[template];
+  const fieldObject = keyBy(fields, "name");
+  const selectField = fieldObject[field];
+  return selectField.default;
+}
+
+// const getFooterProp = partial(getPropOrDefault, "footer");
 
 export default {
   props: {
     footer_address: {
       type: String,
-      required: true,
     },
     footer_address_link: {
       type: String,
-      required: true,
     },
     footer_phone: {
       type: String,
-      required: true,
     },
     footer_email: {
       type: String,
-      required: true,
     },
   },
   computed: {
+    address(v) {
+      return this.getFooterProp("footer_address");
+    },
+    addressLink(v) {
+      return this.getFooterProp("footer_address_link");
+    },
+    email(v) {
+      return this.getFooterProp("footer_email");
+    },
+    phone(v) {
+      return this.getFooterProp("footer_phone");
+    },
     phoneLink(v) {
-      return `tel:${v.footer_phone}`;
+      return `tel:${this.phone}`;
     },
   },
   mounted() {
     this.getEmail();
   },
   methods: {
+    getFooterProp: partial(getPropOrDefault, "footer"),
     getEmail() {
       const ref = this.$refs.email;
       const regex = new RegExp(
         "([\\w\\d._%+-]+)@([\\w\\d-]+)\\.([\\w\\d-]+)?\\.?(\\w+)?"
       );
-
-      let [original, ...matches] = this.$props.footer_email.match(regex);
+      const prop = this.getFooterProp("footer_email");
+      let [original, ...matches] = prop.match(regex);
       matches = matches.filter((a) => a);
       const name = matches.shift();
       const tld = matches.pop();
