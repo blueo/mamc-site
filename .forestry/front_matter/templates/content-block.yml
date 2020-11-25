@@ -16,3 +16,5 @@ fields:
     schema:
       format: html-blocks
   label: Content
+  description: General purpose content block. While images are permitted is it best
+    to use a Media block instead to make sure they display nicely.
