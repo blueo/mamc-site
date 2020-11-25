@@ -1,0 +1,63 @@
+---
+label: Content Page
+hide_body: true
+fields:
+- type: text
+  name: hero_text
+  label: hero_text
+- type: text
+  name: hero_subtitle
+  label: hero_subtitle
+- type: text
+  name: hero_address
+  label: hero_address
+- type: file
+  name: hero_image
+  label: hero_image
+- type: text
+  name: title
+  label: title
+- type: field_group_list
+  name: home_page_blocks
+  label: home_page_blocks
+  fields:
+  - type: text
+    name: template
+    label: template
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: content
+    label: content
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: image_description
+    label: image_description
+  - type: field_group
+    name: call_to_action
+    label: call_to_action
+    fields:
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: link
+      label: link
+- type: text
+  name: footer_title
+  label: footer_title
+- type: text
+  name: footer_address
+  label: footer_address
+- type: text
+  name: footer_address_link
+  label: footer_address_link
+- type: text
+  name: footer_phone
+  label: footer_phone
+- type: text
+  name: footer_email
+  label: footer_email
