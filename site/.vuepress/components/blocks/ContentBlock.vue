@@ -4,9 +4,7 @@
       <section class="content-block">
         <div class="content">
           <h2 v-if="title">{{ title }}</h2>
-          <p>
-            {{ content }}
-          </p>
+          <p v-html="content"></p>
         </div>
       </section>
     </div>
