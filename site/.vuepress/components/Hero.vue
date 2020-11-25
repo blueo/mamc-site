@@ -119,6 +119,12 @@ export default {
   max-width: 100%;
 }
 
+@media screen and (min-width: 600px) {
+  .hero-figcaption {
+    padding-top: 5rem;
+  }
+}
+
 .title {
   /*
     fluid typography calc see https://css-tricks.com/snippets/css/fluid-typography/
