@@ -25,6 +25,7 @@ fields:
   - media-block
   - call-to-action-block
   - centered-media-block
+  - content-block
   config:
     min: 
     max: 
