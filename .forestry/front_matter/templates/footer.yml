@@ -2,34 +2,34 @@
 label: Footer
 hide_body: true
 fields:
-  - name: footer_title
-    type: text
-    config:
-      required: false
-    label: Title
-    default: Contact us
-  - name: footer_address
-    type: text
-    config:
-      required: false
-    label: Address
-    default: 831 New North Road, Mount Albert
-  - name: footer_address_link
-    type: text
-    config:
-      required: false
-    label: Address Link
-    description: link to google maps for the address
-    default: https://goo.gl/maps/tyzoLaZBJoVQHV9Y6
-  - name: footer_phone
-    type: text
-    config:
-      required: false
-    label: Phone
-    default: "09-849 5174"
-  - name: footer_email
-    type: text
-    config:
-      required: false
-    label: Email
-    default: test@mamc.church
+- name: footer_title
+  type: text
+  config:
+    required: false
+  label: Title
+  default: Contact us
+- name: footer_address
+  type: text
+  config:
+    required: false
+  label: Address
+  default: 831 New North Road, Mount Albert
+- name: footer_address_link
+  type: text
+  config:
+    required: false
+  label: Address Link
+  description: link to google maps for the address
+  default: https://goo.gl/maps/tyzoLaZBJoVQHV9Y6
+- name: footer_phone
+  type: text
+  config:
+    required: false
+  label: Phone
+  default: '09-849 5174'
+- name: footer_email
+  type: text
+  config:
+    required: false
+  label: Email
+  default: test@mamc.church

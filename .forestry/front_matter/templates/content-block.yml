@@ -2,17 +2,17 @@
 label: Content Block
 hide_body: true
 fields:
-  - name: title
-    type: text
-    config:
-      required: true
-    label: Title
-    description: title
-  - name: content
-    type: textarea
-    config:
-      required: true
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Content
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: title
+- name: content
+  type: textarea
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
