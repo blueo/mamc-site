@@ -48,6 +48,5 @@ fields:
   config: {}
   template: footer
   label: Footer
-  hidden: false
 pages:
 - site/index.md
