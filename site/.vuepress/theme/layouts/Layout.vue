@@ -14,7 +14,7 @@
       <Blocks :blocks="$page.frontmatter.home_page_blocks" />
     </main>
 
-    <main v-if="$route.path !== '/'">
+    <main v-if="hasBlocks">
       <!-- Page content -->
       <Hero
         :text="$page.frontmatter.hero_text"
@@ -42,6 +42,24 @@ import Blocks from "../../components/blocks/Blocks.vue";
 export default {
   components: {
     Blocks,
+  },
+  computed: {
+    hasBlocks(v) {
+      switch (v.$route.path) {
+        case "/": {
+          return false;
+        }
+        case "/events/": {
+          return false;
+        }
+        case "/news/": {
+          return false;
+        }
+        default: {
+          return true;
+        }
+      }
+    },
   },
 };
 </script>
