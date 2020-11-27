@@ -2,41 +2,41 @@
 label: Content Page
 hide_body: true
 fields:
-  - type: text
-    name: title
-    label: Meta title
-    description: name of the page for search engines
-  - type: text
-    name: hero_text
-    label: Page title
-    description: Largest text seen at the top of the page
-  - type: text
-    name: hero_subtitle
-    label: Subtitle
-    description: Subtitle text seen at the top of the page
-  - type: file
-    name: hero_image
-    label: Hero Image
-    description: Large image at the top of the page
-  - name: page_blocks
-    type: blocks
-    label: Page blocks
-    template_types:
-      - media-block
-      - call-to-action-block
-      - centered-media-block
-      - content-block
-    config:
-      min:
-      max:
-    description: Choose sections to display on the page
-  - name: footer
-    type: include
-    config: {}
-    template: footer
-    label: Footer
-    hidden: true
+- type: text
+  name: title
+  label: Meta title
+  description: name of the page for search engines
+- type: text
+  name: hero_text
+  label: Page title
+  description: Largest text seen at the top of the page
+- type: text
+  name: hero_subtitle
+  label: Subtitle
+  description: Subtitle text seen at the top of the page
+- type: file
+  name: hero_image
+  label: Hero Image
+  description: Large image at the top of the page
+- name: page_blocks
+  type: blocks
+  label: Page blocks
+  template_types:
+  - media-block
+  - call-to-action-block
+  - centered-media-block
+  - content-block
+  config:
+    min: 
+    max: 
+  description: Choose sections to display on the page
+- name: footer
+  type: include
+  config: {}
+  template: footer
+  label: Footer
+  hidden: true
 pages:
-  - site/about-us/index.md
-  - site/services-and-events/index.md
-  - site/choir/index.md
+- site/about-us/index.md
+- site/choir/index.md
+- site/services-and-events/index.md

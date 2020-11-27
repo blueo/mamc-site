@@ -2,45 +2,45 @@
 new_page_extension: md
 auto_deploy: true
 admin_path: "/admin"
-webhook_url:
+webhook_url: 
 sections:
-  - type: document
-    path: site/index.md
-    label: Homepage
-    templates:
-      - settings
-  - type: document
-    path: site/about-us/index.md
-    label: About us
-  - type: document
-    path: site/services-and-events/index.md
-    label: Services and Events
-  - type: document
-    path: site/choir/index.md
-    label: Choir
-  - type: directory
-    path: site/news
-    label: News
-    create: documents
-    match: "**/[!index]*"
-    exclude: index
-    templates:
-      - news
-  - type: directory
-    path: site/events
-    label: Events
-    create: all
-    match: "**/[!index]*"
-    templates:
-      - event
-  - type: heading
-    label: Data
-  - type: document
-    path: site/config.json
-    label: Site Config
+- type: document
+  path: site/index.md
+  label: Homepage
+  templates:
+  - settings
+- type: document
+  path: site/about-us/index.md
+  label: About us
+- type: document
+  path: site/services-and-events/index.md
+  label: Services and Events
+- type: document
+  path: site/choir/index.md
+  label: Choir
+- type: directory
+  path: site/news
+  label: News
+  create: documents
+  match: "**/[!index]*"
+  exclude: index
+  templates:
+  - news
+- type: directory
+  path: site/events
+  label: Events
+  create: all
+  match: "**/[!index]*"
+  templates:
+  - event
+- type: heading
+  label: Data
+- type: document
+  path: site/config.json
+  label: Site Config
 upload_dir: mamc/media
 public_path: media
-front_matter_path: ""
+front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
 build:
