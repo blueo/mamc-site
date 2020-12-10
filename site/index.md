@@ -8,10 +8,7 @@ home_page_blocks:
 - template: media-block
   image: "/v1607585606/mamc/media/portrait_stars_mgqysp.jpg"
   title: Christmas services
-  content: |-
-    service times:
-    - 23rd 11am
-    - 24th 12pm
+  content: "<p>service times: </p><ul><li><p> 23rd 11am</p></li><li><p>24th 12pm</p></li></ul>"
   image_description: Christmas stars
   call_to_action:
     text: See all services
