@@ -14,8 +14,8 @@ home_page_blocks:
     - 24th 12pm
   image_description: Christmas stars
   call_to_action:
-    text: ''
-    link: ''
+    text: See all services
+    link: "/services-and-events"
 - template: media-block
   title: About our Church
   content: The agitation and tears which the subject occasioned, brought on a headache;
