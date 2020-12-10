@@ -34,6 +34,17 @@ home_page_blocks:
   call_to_action:
     text: Learn more
     link: "/choir"
+- template: media-block
+  image: "/v1607585606/mamc/media/portrait_stars_mgqysp.jpg"
+  title: Christmas services
+  content: |-
+    service times:
+    - 23rd 11am
+    - 24th 12pm
+  image_description: Christmas stars
+  call_to_action:
+    text: ''
+    link: ''
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
