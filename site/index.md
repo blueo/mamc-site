@@ -6,6 +6,17 @@ hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 home_page_blocks:
 - template: media-block
+  image: "/v1607585606/mamc/media/portrait_stars_mgqysp.jpg"
+  title: Christmas services
+  content: |-
+    service times:
+    - 23rd 11am
+    - 24th 12pm
+  image_description: Christmas stars
+  call_to_action:
+    text: ''
+    link: ''
+- template: media-block
   title: About our Church
   content: The agitation and tears which the subject occasioned, brought on a headache;
     and it grew so much worse towards the evening, that, added to her unwillingness
@@ -34,17 +45,6 @@ home_page_blocks:
   call_to_action:
     text: Learn more
     link: "/choir"
-- template: media-block
-  image: "/v1607585606/mamc/media/portrait_stars_mgqysp.jpg"
-  title: Christmas services
-  content: |-
-    service times:
-    - 23rd 11am
-    - 24th 12pm
-  image_description: Christmas stars
-  call_to_action:
-    text: ''
-    link: ''
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
