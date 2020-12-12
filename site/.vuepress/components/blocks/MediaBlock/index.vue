@@ -1,5 +1,5 @@
 <template>
-  <div class="row-dark">
+  <div v-bind:class="rowClass">
     <div class="container">
       <section class="media-block">
         <MediaContent
@@ -7,12 +7,14 @@
           :title="title"
           :content="content"
           :callToAction="call_to_action"
+          :theme="theme"
         />
         <MediaImage
           v-else
           :imageDescription="image_description"
           :imageSrc="imageSrc"
           :imageSrcSet="imageSrcSet"
+          :theme="theme"
         />
 
         <MediaImage
@@ -20,12 +22,14 @@
           :imageDescription="image_description"
           :imageSrc="imageSrc"
           :imageSrcSet="imageSrcSet"
+          :theme="theme"
         />
         <MediaContent
           v-else
           :title="title"
           :content="content"
           :callToAction="call_to_action"
+          :theme="theme"
         />
       </section>
     </div>
@@ -49,6 +53,9 @@ export default {
     content: {
       type: String,
       required: true,
+    },
+    colour_scheme: {
+      type: String,
     },
     image: {
       type: String,
@@ -83,6 +90,15 @@ export default {
       );
 
       return sets.join(", ");
+    },
+    theme() {
+      return this.getMediaProp("colour_scheme");
+    },
+    rowClass() {
+      if (this.theme === "light") {
+        return "row";
+      }
+      return "row-dark";
     },
   },
 };

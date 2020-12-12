@@ -1,7 +1,7 @@
 <template>
-  <div class="content">
-    <h2 v-if="title">{{ title }}</h2>
-    <p v-html="content"></p>
+  <div class="container">
+    <h2 class="title" v-if="title">{{ title }}</h2>
+    <div v-bind:class="contentClass" v-html="content"></div>
     <a
       class="button button-dark"
       v-if="callToAction.link"
@@ -22,13 +22,24 @@ export default {
     callToAction: {
       type: Object,
     },
+    theme: {
+      type: String,
+    },
+  },
+  computed: {
+    contentClass() {
+      console.log(this.theme);
+      if (this.theme === "light") {
+        return "content content--light";
+      }
+      return "content content--dark";
+    },
   },
 };
 </script>
 <style lang="stylus" scoped>
-.content {
+.container {
   padding: 2rem min(12vw, 6rem);
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,11 +48,25 @@ export default {
 
 .content p {
   font-size: 1.5rem;
-  color: var(--color-white);
 }
 
-.content h2 {
+.title {
+  text-align: center;
   color: var(--color-bluegreen);
+}
+
+.content--dark {
+  color: var(--color-white);
+
+  p {
+    color: var(--color-white);
+  }
+}
+
+.content--light {
+  p {
+    color: var(--color-black);
+  }
 }
 
 .button {
