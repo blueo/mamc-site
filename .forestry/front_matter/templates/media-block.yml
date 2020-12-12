@@ -30,6 +30,12 @@ fields:
     max: 200
   label: Image description
   description: 'short description of the image for accessiblility '
+- name: image_right
+  type: boolean
+  label: Image right
+  default: true
+  description: Positions the image left or right. Defaults to right. Turn off to position
+    on the left.
 - name: call_to_action
   type: field_group
   config: {}
