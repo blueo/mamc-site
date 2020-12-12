@@ -17,6 +17,22 @@ fields:
     schema:
       format: html-blocks
   label: Content
+  description: Please do not use Heading 1 size as it interferes with acessibility
+    and search engines
+- name: colour_scheme
+  type: select
+  default: dark
+  config:
+    required: false
+    options:
+    - dark
+    - light
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Colour scheme
 - name: image
   type: file
   config:
