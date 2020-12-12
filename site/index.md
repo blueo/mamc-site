@@ -14,6 +14,7 @@ home_page_blocks:
   call_to_action:
     text: See all services
     link: "/services-and-events"
+  colour_scheme: light
 - template: media-block
   title: About our Church
   content: The agitation and tears which the subject occasioned, brought on a headache;
@@ -29,6 +30,7 @@ home_page_blocks:
     text: Learn more
     link: "/about-us"
   image_right: true
+  colour_scheme: ''
 - template: call-to-action-block
   content: Services & Upcoming Events
   button_text: Learn More
