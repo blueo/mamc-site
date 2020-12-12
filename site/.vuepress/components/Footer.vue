@@ -46,24 +46,7 @@
 
 <script>
 import EmailObfuscator from "email-obfuscate";
-import { keyBy, partial } from "lodash";
-
-function getPropOrDefault(template, field) {
-  const value = this[field];
-  if (value) {
-    return value;
-  }
-  const templates = this.$themeConfig.contentTemplates;
-  // get defaults from config
-  const {
-    data: { fields },
-  } = templates[template];
-  const fieldObject = keyBy(fields, "name");
-  const selectField = fieldObject[field];
-  return selectField.default;
-}
-
-// const getFooterProp = partial(getPropOrDefault, "footer");
+import { getFrontMatterField } from "../utils/defaultFields";
 
 export default {
   props: {
@@ -101,7 +84,7 @@ export default {
     this.getEmail();
   },
   methods: {
-    getFooterProp: partial(getPropOrDefault, "footer"),
+    getFooterProp: getFrontMatterField("footer"),
     getEmail() {
       const ref = this.$refs.email;
       const regex = new RegExp(
