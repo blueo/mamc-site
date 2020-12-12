@@ -14,6 +14,7 @@
           :imageSrc="imageSrc"
           :imageSrcSet="imageSrcSet"
         />
+
         <MediaImage
           v-if="imageRight"
           :imageDescription="image_description"
@@ -55,6 +56,9 @@ export default {
     image_description: {
       type: String,
     },
+    image_right: {
+      type: Boolean,
+    },
     call_to_action: {
       type: Object,
     },
@@ -89,7 +93,7 @@ export default {
   flex-direction: column;
 }
 
-@media screen and (min-width: $breakpoint-large) {
+@media screen and (min-width: $breakpoint-desktop) {
   .media-block {
     display: grid;
     grid-template-columns: 1fr 1fr;

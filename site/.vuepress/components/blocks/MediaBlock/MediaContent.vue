@@ -4,7 +4,7 @@
     <p v-html="content"></p>
     <a
       class="button button-dark"
-      v-if="callToAction"
+      v-if="callToAction.link"
       v-bind:href="callToAction.link"
       >{{ callToAction.text }}</a
     >

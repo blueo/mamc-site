@@ -1,8 +1,8 @@
-import { keyBy, partial } from "lodash";
+import { keyBy, partial, isEmpty } from "lodash";
 
 export function getPropOrDefault(template, field) {
   const value = this[field];
-  if (value) {
+  if (typeof value === 'boolean' || !isEmpty(value)) {
     return value;
   }
   const templates = this.$themeConfig.contentTemplates;
