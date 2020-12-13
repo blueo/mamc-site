@@ -6,10 +6,10 @@ hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 home_page_blocks:
 - template: media-block
-  image: "/v1607585606/mamc/media/portrait_stars_mgqysp.jpg"
+  image: "/v1607832558/mamc/media/IMG_3273_ijb254.jpg"
   title: Christmas services
   content: "<p>service times: </p><ul><li><p> 23rd 11am</p></li><li><p>24th 12pm</p></li></ul>"
-  image_description: Christmas stars
+  image_description: MAMC advent
   image_right: false
   call_to_action:
     text: See all services
