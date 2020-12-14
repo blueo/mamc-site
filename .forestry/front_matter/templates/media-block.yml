@@ -2,87 +2,85 @@
 label: Media Block
 hide_body: true
 fields:
-  - name: title
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: optional title
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Content
+  description: Please do not use Heading 1 size as it interferes with acessibility
+    and search engines
+- name: colour_scheme
+  type: select
+  default: dark
+  config:
+    required: false
+    options:
+    - dark
+    - light
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Colour scheme
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  description: the media block will not display correctly without an image
+- name: image_description
+  type: text
+  config:
+    required: true
+    max: 200
+  label: Image description
+  description: 'short description of the image for accessiblility '
+- name: image_right
+  type: boolean
+  label: Image right
+  default: true
+  description: Positions the image left or right. Defaults to right. Turn off to position
+    on the left.
+- name: image_orientation
+  type: select
+  default: square
+  config:
+    required: false
+    options:
+    - square
+    - landscape
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Image orientation
+- name: call_to_action
+  type: field_group
+  config: {}
+  fields:
+  - name: text
     type: text
     config:
       required: false
-    label: Title
-    description: optional title
-  - name: content
-    type: textarea
-    default: ""
-    config:
-      required: true
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: Content
-    description:
-      Please do not use Heading 1 size as it interferes with acessibility
-      and search engines
-  - name: colour_scheme
-    type: select
-    default: dark
-    config:
-      required: false
-      options:
-        - dark
-        - light
-      source:
-        type: simple
-        section:
-        file:
-        path:
-    label: Colour scheme
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-    description: the media block will not display correctly without an image
-  - name: image_description
+    label: Text
+    description: button text
+  - name: link
     type: text
     config:
-      required: true
-      max: 200
-    label: Image description
-    description: "short description of the image for accessiblility "
-  - name: image_right
-    type: boolean
-    label: Image right
-    default: true
-    description:
-      Positions the image left or right. Defaults to right. Turn off to position
-      on the left.
-  - name: image_orientation
-    type: select
-    default: square
-    config:
       required: false
-      options:
-        - square
-        - landscape
-      source:
-        type: simple
-        section:
-        file:
-        path:
-    label: Image orientation
-  - name: call_to_action
-    type: field_group
-    config: {}
-    fields:
-      - name: text
-        type: text
-        config:
-          required: false
-        label: Text
-        description: button text
-      - name: link
-        type: text
-        config:
-          required: false
-        label: Link
-        description: link for button eg https://mamc.church
-    label: Call to action
-    description: the settings for an optional button on the media block
+    label: Link
+    description: link for button eg https://mamc.church
+  label: Call to action
+  description: the settings for an optional button on the media block
