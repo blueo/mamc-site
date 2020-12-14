@@ -2,10 +2,8 @@
   <div class="row">
     <div class="container">
       <section class="content-block">
-        <div class="content">
-          <h2 v-if="title">{{ title }}</h2>
-          <p v-html="content"></p>
-        </div>
+        <h2 class="title" v-if="title">{{ title }}</h2>
+        <div class="content" v-html="content"></div>
       </section>
     </div>
   </div>
@@ -26,8 +24,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-h2 {
+.title {
   color: var(--color-bluegreen);
+  width: auto;
 }
 
 .content-block {
