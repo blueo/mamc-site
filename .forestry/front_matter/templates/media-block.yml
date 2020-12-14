@@ -66,6 +66,7 @@ fields:
       file: 
       path: 
   label: Image orientation
+  description: display image in square or landscape format. Defaults to square.
 - name: call_to_action
   type: field_group
   config: {}
