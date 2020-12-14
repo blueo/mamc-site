@@ -1,5 +1,5 @@
 <template>
-  <figure class="fig">
+  <figure v-bind:class="imageClasses">
     <picture
       ><img
         v-bind:alt="imageDescription"
@@ -23,6 +23,18 @@ export default {
     imageSrcSet: {
       type: String,
     },
+    imageOrientation: {
+      type: String,
+    },
+  },
+  computed: {
+    imageClasses() {
+      if (this.imageOrientation === "portrait") {
+        return "fig portrait";
+      }
+
+      return "fig";
+    },
   },
 };
 </script>
@@ -33,6 +45,10 @@ export default {
   position: relative;
   overflow: hidden;
   min-height: 100vw;
+}
+
+.fig.portrait {
+  min-height: calc(100vw * 0.5625);
 }
 
 .fig picture {
@@ -48,13 +64,25 @@ export default {
   margin: 0px;
 }
 
+.fig.portrait picture img {
+  height: auto;
+}
+
 @media screen and (min-width: $breakpoint-large) {
   .fig {
     min-height: Min(690px, 50vw);
   }
 
+  .fig.portrait {
+    min-height: Min(388px, calc(50vw * 0.5625));
+  }
+
   .fig picture {
     height: Min(690px, 50vw);
+  }
+
+  .fig.portrait picture {
+    min-height: Min(388px, calc(50vw * 0.5625));
   }
 }
 </style>

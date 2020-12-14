@@ -14,6 +14,7 @@
           :imageDescription="image_description"
           :imageSrc="imageSrc"
           :imageSrcSet="imageSrcSet"
+          :imageOrientation="imageOrientation"
           :theme="theme"
         />
 
@@ -22,6 +23,7 @@
           :imageDescription="image_description"
           :imageSrc="imageSrc"
           :imageSrcSet="imageSrcSet"
+          :imageOrientation="imageOrientation"
           :theme="theme"
         />
         <MediaContent
@@ -66,6 +68,9 @@ export default {
     image_right: {
       type: Boolean,
     },
+    image_orientation: {
+      type: String,
+    },
     call_to_action: {
       type: Object,
     },
@@ -100,6 +105,9 @@ export default {
       }
       return "row-dark";
     },
+    imageOrientation() {
+      return this.getMediaProp("image_orientation");
+    },
   },
 };
 </script>
@@ -109,7 +117,7 @@ export default {
   flex-direction: column;
 }
 
-@media screen and (min-width: $breakpoint-desktop) {
+@media screen and (min-width: $breakpoint-large) {
   .media-block {
     display: grid;
     grid-template-columns: 1fr 1fr;
