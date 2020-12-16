@@ -22,6 +22,16 @@ page_blocks:
     Mt Albert (BAMA) with St Luke’s Anglican Church. BAMA provides financial advice
     to beneficiaries.</p><p>Our church celebrated its 150th year of service to the
     community in 2016, and is now 154 years old.</p>"
+- template: content-block
+  content: "<p>The Mount Albert Methodist Church has many opportunities for Christian
+    service within the church, and in outreach to the community. We can contribute
+    to a foodbank, volunteer for the Community Club that meets in our Church Hall,
+    sing in the choir, arrange flowers, mow lawns, and participate or help organise
+    various fund raising events. For a time the church needs to invest in routine
+    maintenance, but once these tasks are completed we expect to be able to use our
+    various skills and talents to raise money for other causes thoughtfully considered
+    to be worthy.</p>"
+  title: Opportunities for service
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
