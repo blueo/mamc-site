@@ -7,9 +7,15 @@ hero_subtitle: ''
 hero_image: "/v1602139856/mamc/media/Good_Friday_2020_photo_xixjju.jpg"
 page_blocks:
 - template: content-block
-  title: Services & Events
-  content: "<p>Here you can put <strong>formatted</strong> content - but be careful
-    when adding images</p>"
+  title: Sunday School
+  content: "<p>The young people of Mount Albert Methodist are led by three women who
+    bring their various creative gifts to illustrate Christian principles of good
+    living and character to children who range in ages from 6 months to 15 years old.
+    The tenets of Christianity are offered to the children, who can make their own
+    choices in consultation with their parents regarding what it should mean to them.
+    The children regularly lead church services, and design their contributions themselves
+    guided by the Sunday School teachers. We enjoy music, and sing Christian songs-
+    usually accompanied by guitar.</p>"
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
