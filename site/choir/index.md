@@ -7,7 +7,7 @@ hero_subtitle: ''
 hero_image: "/v1602139829/mamc/media/mark_choir_and_strings_egnvjb.jpg"
 page_blocks:
 - template: content-block
-  title: Choir Details
+  title: About the choir
   content: <p>Our enthusiastic and accomplished choir conductor, Mark Rosser, encourages
     a motley band of enthusiastic amateurs to perform western masterpieces such as
     Johannes Brahms ‘Requiem’, John Rutter ‘Requiem’, Andrew Carter ‘Benedicite’,
