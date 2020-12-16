@@ -45,12 +45,12 @@ home_page_blocks:
   button_link: "/services-and-events"
 - template: centered-media-block
   title: Mount Albert Methodist Church Choir
-  content: We were fatigued by the contest, which was produced by my want of caution;
-    and he was not then in the humour to slide into easy and cheerful talk. It therefore
-    so happened, that we were after an hour or two very willing to separate and go
-    to bed.
+  content: Our enthusiastic and accomplished choir conductor, Mark Rosser, encourages
+    a motley band of enthusiastic amateurs to perform western masterpieces such as
+    Johannes Brahms ‘Requiem’, John Rutter ‘Requiem’, Andrew Carter ‘Benedicite’,
+    Camille Saint-Saëns ‘Oratorio de Noël’, Felix Mendelssohn ‘Elijah’
   image: "/v1602139831/mamc/media/choir_fbfxpw.jpg"
-  image_description: Choir in action
+  image_description: Our choir in action
   call_to_action:
     text: Learn more
     link: "/choir"
