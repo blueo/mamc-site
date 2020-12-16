@@ -11,7 +11,7 @@ home_page_blocks:
   content: "<p>service times: </p><ul><li><p> 23rd 11am</p></li><li><p>24th 12pm</p></li></ul>"
   image_description: MAMC advent
   image_right: false
-  image_orientation: ''
+  image_orientation: landscape
   call_to_action:
     text: See all services
     link: "/services-and-events"
