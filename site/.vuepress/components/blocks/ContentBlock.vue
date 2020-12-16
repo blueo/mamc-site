@@ -37,7 +37,6 @@ export default {
 .content {
   display: flex;
   flex-direction: column;
-  text-align: center;
   align-items: center;
 }
 </style>

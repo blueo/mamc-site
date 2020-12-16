@@ -29,8 +29,8 @@ export default {
   },
   computed: {
     imageClasses() {
-      if (this.imageOrientation === "portrait") {
-        return "fig portrait";
+      if (this.imageOrientation === "landscape") {
+        return "fig landscape";
       }
 
       return "fig";
@@ -47,7 +47,7 @@ export default {
   min-height: 100vw;
 }
 
-.fig.portrait {
+.fig.landscape {
   min-height: calc(100vw * 0.5625);
 }
 
@@ -57,7 +57,7 @@ export default {
   height: 100%;
 }
 
-.fig.portrait picture {
+.fig.landscape picture {
   height: auto;
   left: 50%;
   top: 50%;
@@ -71,7 +71,7 @@ export default {
   margin: 0px;
 }
 
-.fig.portrait picture img {
+.fig.landscape picture img {
   height: auto;
 }
 
@@ -80,7 +80,7 @@ export default {
     min-height: Min(690px, 50vw);
   }
 
-  .fig.portrait {
+  .fig.landscape {
     min-height: Min(388px, calc(50vw * 0.5625));
   }
 
@@ -88,7 +88,7 @@ export default {
     height: Min(690px, 50vw);
   }
 
-  .fig.portrait picture {
+  .fig.landscape picture {
     min-height: Min(388px, calc(50vw * 0.5625));
   }
 }
