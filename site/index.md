@@ -14,17 +14,6 @@ home_page_blocks:
     text: ''
     link: ''
 - template: media-block
-  image: "/v1607832558/mamc/media/IMG_3273_ijb254.jpg"
-  title: Christmas services
-  content: "<p>service times: </p><ul><li><p> 23rd 11am</p></li><li><p>24th 12pm</p></li></ul>"
-  image_description: MAMC advent
-  image_right: false
-  image_orientation: landscape
-  call_to_action:
-    text: See all services
-    link: "/services-and-events"
-  colour_scheme: light
-- template: media-block
   title: About our Church
   content: "<p>Mount Albert Methodist Church is a friendly, welcoming congregation
     who meet together on Sunday mornings at 10 am. We worship God through music, acclamation
