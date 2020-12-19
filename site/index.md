@@ -5,6 +5,14 @@ hero_address: 831 New North Road, Mount Albert
 hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 home_page_blocks:
+- template: centered-media-block
+  image: "/v1608411728/mamc/media/37b54be9-3f09-4e05-ab9e-dae387679539_luhzq2.jpg"
+  title: Christmas as MAMC
+  content: " "
+  image_description: Christmas services
+  call_to_action:
+    text: ''
+    link: ''
 - template: media-block
   image: "/v1607832558/mamc/media/IMG_3273_ijb254.jpg"
   title: Christmas services
