@@ -49,7 +49,7 @@ home_page_blocks:
     a motley band of enthusiastic amateurs to perform western masterpieces such as
     Johannes Brahms ‘Requiem’, John Rutter ‘Requiem’, Andrew Carter ‘Benedicite’,
     Camille Saint-Saëns ‘Oratorio de Noël’, Felix Mendelssohn ‘Elijah’
-  image: "/v1602139831/mamc/media/choir_fbfxpw.jpg"
+  image: "/v1608411452/mamc/media/image_6487327_1_usc5q2.jpg"
   image_description: Our choir in action
   call_to_action:
     text: Learn more
