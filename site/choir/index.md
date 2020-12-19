@@ -4,7 +4,7 @@ title: MAMC Choir
 description: Mount Albert Methodist Church Choir
 hero_text: Mount Albert Methodist Church Choir
 hero_subtitle: ''
-hero_image: "/v1602139829/mamc/media/mark_choir_and_strings_egnvjb.jpg"
+hero_image: "/v1608411452/mamc/media/image_6487327_1_usc5q2.jpg"
 page_blocks:
 - template: content-block
   title: About the choir
