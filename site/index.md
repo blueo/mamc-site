@@ -11,8 +11,8 @@ home_page_blocks:
   content: " "
   image_description: Christmas services
   call_to_action:
-    text: ''
-    link: ''
+    text: All services
+    link: "/services-and-events"
 - template: media-block
   title: About our Church
   content: "<p>Mount Albert Methodist Church is a friendly, welcoming congregation
