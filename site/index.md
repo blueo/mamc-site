@@ -5,14 +5,18 @@ hero_address: 831 New North Road, Mount Albert
 hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 home_page_blocks:
-- template: centered-media-block
-  image: "/v1608411728/mamc/media/37b54be9-3f09-4e05-ab9e-dae387679539_luhzq2.jpg"
-  title: Christmas at MAMC
-  content: " "
-  image_description: Christmas services
+- template: media-block
+  colour_scheme: dark
+  image_right: false
+  image_orientation: square
+  title: Easter
+  content: "<p>Share the story of Easter with us and the wider Mount Albert community.
+    </p>"
+  image: "/v1601668414/mamc/media/stained_glass_window_ej9gh5.jpg"
+  image_description: MAMC Cross - Foyer window
   call_to_action:
-    text: All services
-    link: "/services-and-events"
+    text: ''
+    link: ''
 - template: media-block
   title: About our Church
   content: "<p>Mount Albert Methodist Church is a friendly, welcoming congregation
