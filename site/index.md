@@ -6,7 +6,7 @@ hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 home_page_blocks:
 - template: media-block
-  colour_scheme: dark
+  colour_scheme: light
   image_right: false
   image_orientation: square
   title: Easter
