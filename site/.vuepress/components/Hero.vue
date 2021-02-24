@@ -85,7 +85,7 @@ export default {
   position: relative;
   background-color: black; /** no var used as only for img opacity */
   overflow: hidden;
-  min-height: 30rem;
+  min-height: 50rem;
 }
 
 .hero-fig picture {

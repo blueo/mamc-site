@@ -13,7 +13,7 @@
     },
     {
       "text": "Contact us",
-      "link": "about-us",
+      "link": "/about-us",
       "position": "right",
       "external": false
     }
