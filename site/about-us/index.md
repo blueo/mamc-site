@@ -9,19 +9,17 @@ hero_image: "/v1602139845/mamc/media/church_in_session_tkzcyg.jpg"
 page_blocks:
 - template: content-block
   title: ''
-  content: "<p></p><p>Mount Albert Methodist Church is a friendly, welcoming congregation
-    who meet together on Sunday mornings at 10 am. We worship God through music, acclamation
-    through the sharing of a liturgy, fellowship, and teaching from Reverend Amos
-    Muzondiwa and several guest speakers from within our congregation and invited
-    from other churches and Christian organisations. We have an active Sunday School,
-    four part Choir which gives regular concerts, and we are starting a Christian
-    book club in the New Year. We would welcome you as part of our church family when
-    you visit us - with a shared cup of tea or coffee after the service.</p><p>Mount
+  content: <p></p><p>We are a diverse, welcoming community of Christian people, following
+    the Methodist tradition.</p><p class="MsoNormal">We enjoy meeting together, sharing
+    food, music and worshipping God.</p><p>We have an active Sunday School, four part
+    Choir which gives regular concerts. We would welcome you as part of our church
+    family when you visit us - with a shared cup of tea or coffee after the service.</p><p>Mount
     Albert Methodist supports various socially supportive community groups who meet
     regularly in our Church Hall. We also share support of the Beneficiaries Advocacy
     Mt Albert (BAMA) with St Luke’s Anglican Church. BAMA provides financial advice
     to beneficiaries.</p><p>Our church celebrated its 150th year of service to the
-    community in 2016, and is now 154 years old.</p>"
+    community in 2016.</p><p>We’re part of the Auckland Methodist Synod, and Te Haahi
+    Weteriana o Aotearoa - The Methodist Church of New Zealand.</p>
 - template: content-block
   content: "<p>The Mount Albert Methodist Church has many opportunities for Christian
     service within the church, and in outreach to the community. We can contribute
