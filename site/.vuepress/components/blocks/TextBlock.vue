@@ -19,6 +19,23 @@ export default {
     content: {
       type: String,
     },
+    theme: {
+      type: String,
+    },
+  },
+  computed: {
+    rowClass() {
+      if (this.theme === "dark") {
+        return "row-dark";
+      }
+      return "row";
+    },
+    contentClass() {
+      if (this.theme === "dark") {
+        return "content content--dark";
+      }
+      return "content content--light";
+    },
   },
 };
 </script>
