@@ -4,7 +4,7 @@ title: Services and Events
 description: Services and Events
 hero_text: Services and Events
 hero_subtitle: ''
-hero_image: "/v1602139856/mamc/media/Good_Friday_2020_photo_xixjju.jpg"
+hero_image: "/v1602139831/mamc/media/stained_glass_window_fsrzp2.jpg"
 page_blocks:
 - template: content-block
   title: Sunday School
