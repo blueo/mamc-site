@@ -47,14 +47,6 @@ module.exports = {
       },
     ],
     [
-      "script",
-      {
-        src: "https://kit.fontawesome.com/0bdbd80af7.js",
-        crossorigin: "anonymous",
-        async: true,
-      },
-    ],
-    [
       "link",
       {
         rel: "apple-touch-icon",
