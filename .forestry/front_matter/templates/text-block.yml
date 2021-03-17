@@ -2,35 +2,34 @@
 label: Text Block
 hide_body: true
 fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-    description: optional title
-  - name: content
-    type: textarea
-    default: ""
-    config:
-      required: true
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: Content
-    description:
-      Please do not use Heading 1 size as it interferes with acessibility
-      and search engines
-  - name: colour_scheme
-    type: select
-    default: light
-    config:
-      required: false
-      options:
-        - dark
-        - light
-      source:
-        type: simple
-        section:
-        file:
-        path:
-    label: Colour scheme
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: optional title
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Content
+  description: Please do not use Heading 1 size as it interferes with acessibility
+    and search engines
+- name: colour_scheme
+  type: select
+  default: light
+  config:
+    required: false
+    options:
+    - dark
+    - light
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Colour scheme
