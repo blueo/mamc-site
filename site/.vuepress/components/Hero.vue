@@ -85,7 +85,7 @@ export default {
   position: relative;
   background-color: black; /** no var used as only for img opacity */
   overflow: hidden;
-  min-height: 50rem;
+  min-height: 50vh;
 }
 
 .hero-fig picture {
@@ -103,6 +103,10 @@ export default {
 }
 
 @media screen and (min-width: 600px) {
+  .hero-fig {
+    min-height: calc(0.5 * 100vw);
+  }
+
   .hero-fig picture img {
     height: auto;
   }
