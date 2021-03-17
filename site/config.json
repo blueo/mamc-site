@@ -12,10 +12,22 @@
       "external": false
     },
     {
-      "text": "Contact us",
+      "text": "Services and Events",
+      "link": "/services-and-events",
+      "position": "right"
+    },
+    {
+      "text": "Giving",
+      "link": "/giving",
+      "position": "right",
+      "external": false
+    },
+    {
+      "text": "About us",
       "link": "/about-us",
       "position": "right",
       "external": false
     }
+
   ]
 }
