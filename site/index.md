@@ -5,10 +5,6 @@ hero_address: 831 New North Road, Mount Albert
 hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 home_page_blocks:
-- template: text-block
-  title: Easter
-  content: "<p>Share the story of Easter with us and the wider Mount Albert community.
-    </p>"
 - template: media-block
   title: About our Church
   content: <p>We are a diverse, welcoming community of Christian people, following
