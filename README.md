@@ -1,41 +1,42 @@
-<p align="center">
-  <img src="site/.vuepress/public/upload/logo.svg" height="64">
-  <h3 align="center">VuePress site</h3>
-  <p align="center">VuePress site with site and blogging pages<br>ready to deploy, and configured for Forestry (Content Management)<p>
-</p>
+# create-svelte
 
-<img src="https://file-gnmccqwnxv.now.sh/" style="-webkit-user-select: none; display: block; margin: auto; cursor: zoom-in;" width="100%" height="auto">
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
-## Development
+## Creating a project
+
+If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
-# install VuePress locally
-npm i -g vuepress
+# create a new project in the current directory
+npm init svelte@next
 
-# Start local dev server
-vuepress dev site
+# create a new project in my-app
+npm init svelte@next my-app
 ```
 
-## Build
+> Note: the `@next` is temporary
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
-# Build static files to .vuepress/dist
-vuepress build site
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-## Deploy with Netlify
+## Building
 
-Import your site in Netlify
+Svelte apps are built with _adapters_, which optimise your project for deployment to different environments.
 
-1. Create a new site in Netlify and import your repository.
-2. Set the build command to: `npm run site:build`
-3. Set the publish directory to `site/.vuepress/dist`
+By default, `npm run build` will generate a Node app that you can run with `node build`. To use a different adapter, add it to the `devDependencies` in `package.json` making sure to specify the version as `next` and update your `svelte.config.cjs` to [specify your chosen adapter](https://kit.svelte.dev/docs#configuration-adapter). The following official adapters are available:
 
-That's it, now your site gets deployed automatically on `git push`
+- [@sveltejs/adapter-node](https://github.com/sveltejs/kit/tree/master/packages/adapter-node)
+- [@sveltejs/adapter-static](https://github.com/sveltejs/kit/tree/master/packages/adapter-static)
+- [@sveltejs/adapter-netlify](https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify)
+- [@sveltejs/adapter-vercel](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel)
+- ...more soon
 
-## Forestry (Content Management)
-
-This project has been pre-configured to work with Forestry, just import your repository ✨
-Any changes you make will be commited back to the repo, and deployed if you're using Netlify.
-
-[![Import this project into Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=forestryio/site-vuepress&provider=github&engine=vuepress)
+[See the adapter documentation for more detail](https://kit.svelte.dev/docs#adapters)
