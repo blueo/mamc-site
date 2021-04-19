@@ -7,6 +7,10 @@ hero_subtitle: ''
 hero_image: "/v1607832558/mamc/media/IMG_3273_ijb254.jpg"
 page_blocks:
 - template: content-block
+  title: Regular services
+  content: "<p>Our regular service is at 10am every Sunday at 831 New North Road,
+    Mount Albert</p>"
+- template: content-block
   title: Sunday School
   content: "<p>The young people of Mount Albert Methodist are led by three women who
     bring their various creative gifts to illustrate Christian principles of good
