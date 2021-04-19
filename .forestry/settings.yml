@@ -20,6 +20,10 @@ sections:
 - type: document
   path: site/choir/index.md
   label: Choir
+- type: document
+  path: site/giving/index.md
+  label: Giving
+  match: "**/*"
 - type: heading
   label: Not yet live
 - type: directory
