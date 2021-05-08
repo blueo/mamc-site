@@ -3,7 +3,7 @@
 	import type { LoadInput, LoadOutput } from '@sveltejs/kit/types/page';
 
 	export async function load({ page, fetch }: LoadInput): Promise<LoadOutput> {
-		const url = `/index.json`;
+		const url = `/${page.params.slug}.json`;
 		const res = await fetch(url);
 
 		if (res.ok) {
@@ -30,10 +30,11 @@
 
 	export let hero_text: string;
 	export let hero_subtitle: string;
-	export let hero_address: string;
+	export let hero_address: string = '';
 	export let hero_image: string;
 	export let title: string;
-	export let home_page_blocks: Array<Block>;
+	export let page_blocks: Array<Block>;
+	export let footer_title: string;
 	export let footer_address: string;
 	export let footer_address_link: string;
 	export let footer_email: string;
@@ -46,7 +47,7 @@
 <main>
 	<Hero address={hero_address} text={hero_text} image={hero_image} subtitle={hero_subtitle} />
 
-	<Blocks blocks={home_page_blocks} />
+	<Blocks blocks={page_blocks} />
 </main>
 
-<Footer {footer_address} {footer_email} {footer_phone} />
+<Footer {footer_address} {footer_email} {footer_phone} {footer_address_link} {footer_title} />

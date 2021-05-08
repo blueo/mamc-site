@@ -1,8 +1,4 @@
-<script lang="ts">
-	export let className = '';
-</script>
-
-<svg class={className} data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"
+<svg class="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"
 	><defs
 		><style>
 			.cls-1 {
