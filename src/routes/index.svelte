@@ -1,0 +1,52 @@
+<script lang="ts" context="module">
+	import type { PageTemplate } from '$lib/data';
+	import type { LoadInput, LoadOutput } from '@sveltejs/kit/types/page';
+
+	export async function load({ page, fetch }: LoadInput): Promise<LoadOutput> {
+		const url = `/index.json`;
+		const res = await fetch(url);
+
+		if (res.ok) {
+			const body: PageTemplate = await res.json();
+			const props = body?.data;
+
+			return {
+				props
+			};
+		}
+
+		return {
+			status: res.status,
+			error: new Error(`Could not load ${url}`)
+		};
+	}
+</script>
+
+<script lang="ts">
+	import Hero from '$lib/Hero.svelte';
+	import Blocks from '$lib/blocks/Blocks.svelte';
+	import type { Block } from '$lib/blocks/types';
+	import Footer from '$lib/Footer.svelte';
+
+	export let hero_text: string;
+	export let hero_subtitle: string;
+	export let hero_address: string;
+	export let hero_image: string;
+	export let title: string;
+	export let home_page_blocks: Array<Block>;
+	export let footer_address: string;
+	export let footer_address_link: string;
+	export let footer_email: string;
+	export let footer_phone: string;
+</script>
+
+<svelte:head>
+	<title>{title} | MAMC</title>
+</svelte:head>
+<main>
+	<Hero address={hero_address} text={hero_text} image={hero_image} subtitle={hero_subtitle} />
+
+	<Blocks blocks={home_page_blocks} />
+</main>
+
+<Footer {footer_address} {footer_email} {footer_phone} />
