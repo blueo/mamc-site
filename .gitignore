@@ -4,3 +4,4 @@ node_modules
 /build
 /functions
 site/.vuepress/dist
+/.svelte-kit

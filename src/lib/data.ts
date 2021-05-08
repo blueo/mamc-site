@@ -1,7 +1,7 @@
-import * as matter from 'gray-matter';
+import matter from 'gray-matter';
 import glob from 'glob';
 import path from 'path';
-import keyBy from 'lodash/keyBy';
+import { keyBy } from 'lodash-es';
 const files = glob.sync('./.forestry/front_matter/templates/*.yml');
 
 const templates: Array<PageTemplate | BlockTemplate> = files.map((file) => {
