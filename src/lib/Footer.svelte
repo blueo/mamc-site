@@ -6,7 +6,7 @@
 	export let footer_address_link: string;
 	export let footer_phone: string;
 	export let footer_email: string;
-	export let footer_title: string;
+	export let footer_title: string = 'Contact us';
 
 	// email ref
 	let email;
