@@ -1,6 +1,7 @@
 {
 	"name": "mamc-site",
 	"version": "0.0.1",
+	"url": "https://mamc.church",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
@@ -33,7 +34,8 @@
 		"svelte-preprocess": "^4.7.2",
 		"tslib": "^2.0.0",
 		"typescript": "^4.0.0",
-		"vite": "^2.2.3"
+		"vite": "^2.2.3",
+		"xmlbuilder2": "^2.4.1"
 	},
 	"type": "module"
 }

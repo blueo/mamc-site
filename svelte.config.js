@@ -15,7 +15,14 @@ const config = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 
-		vite: () => ({})
+		vite: () => ({}),
+
+		prerender: {
+			crawl: true,
+			enabled: true,
+			force: true,
+			pages: ['*', '/sitemap.xml']
+		}
 	}
 };
 
