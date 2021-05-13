@@ -1,9 +1,7 @@
 {
-  "title": "MAMC",
-  "description": "Mt Albert Methodist Church",
-  "logo": "/upload/logo.svg",
+  "title": "MAMC - Mt Albert Methodist Church",
+  "description": "A diverse, welcoming community of Christian people, following the Methodist tradition. Part of the Auckland Methodist Synod, and Te Haahi Weteriana o Aotearoa - The Methodist Church of New Zealand.",
   "footer": "MAMC",
-  "favicon": "favicon-32x32.png",
   "navigation": [
     {
       "text": "Home",

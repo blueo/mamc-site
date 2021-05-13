@@ -27,6 +27,7 @@
 	import Blocks from '$lib/blocks/Blocks.svelte';
 	import type { Block } from '$lib/blocks/types';
 	import Footer from '$lib/Footer.svelte';
+	import { getContext } from 'svelte';
 
 	export let hero_text: string;
 	export let hero_subtitle: string;
@@ -39,10 +40,12 @@
 	export let footer_address_link: string;
 	export let footer_email: string;
 	export let footer_phone: string;
+
+	const siteTitle = getContext('siteTitle');
 </script>
 
 <svelte:head>
-	<title>{title} | MAMC</title>
+	<title>{title} | {siteTitle}</title>
 </svelte:head>
 <main>
 	<Hero address={hero_address} text={hero_text} image={hero_image} subtitle={hero_subtitle} />

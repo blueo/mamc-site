@@ -1,42 +1,65 @@
+<script lang="ts" context="module">
+	import type { LoadInput, LoadOutput } from '@sveltejs/kit/types/page';
+
+	enum LeftRight {
+		Left = 'left',
+		Right = 'right'
+	}
+
+	type NavItem = {
+		text: string;
+		link: string;
+		position: LeftRight;
+		external: boolean;
+	};
+
+	type SiteConfig = {
+		title: string;
+		description: string;
+		navigation: NavItem[];
+	};
+
+	export async function load({ page, fetch }: LoadInput): Promise<LoadOutput> {
+		const url = `/config.json`;
+		const res = await fetch(url);
+
+		if (res.ok) {
+			const body: SiteConfig = await res.json();
+
+			return {
+				props: { ...body }
+			};
+		}
+
+		return {
+			status: res.status,
+			error: new Error(`Could not load ${url}`)
+		};
+	}
+</script>
+
 <script lang="ts">
 	import '../app.styl';
 	import Logo from '../icons/logo.svelte';
 	import Burger from '../icons/burger.svelte';
 	import Close from '../icons/close.svelte';
+	import { setContext } from 'svelte';
 
-	const navLinks = [
-		{
-			text: 'Home',
-			link: '/',
-			position: 'left',
-			external: false
-		},
-		{
-			text: 'Services and Events',
-			link: '/services-and-events',
-			position: 'right'
-		},
-		{
-			text: 'Giving',
-			link: '/giving',
-			position: 'right',
-			external: false
-		},
-		{
-			text: 'About us',
-			link: '/about-us',
-			position: 'right',
-			external: false
-		}
-	];
+	export let title: string;
+	export let description: string;
+	export let navigation: NavItem[];
 
 	let navActive = false;
 	function toggleMobileNav() {
 		navActive = !navActive;
 	}
+
+	setContext('siteTitle', title);
 </script>
 
 <svelte:head>
+	<meta name="description" content={description} />
+
 	<link
 		rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
@@ -79,7 +102,7 @@
 
 	<nav class="navigation right desktop-nav">
 		<ul>
-			{#each navLinks as nav}
+			{#each navigation as nav}
 				<li>
 					<a href={nav.link}>{nav.text}</a>
 				</li>
@@ -93,7 +116,7 @@
 	<div class="mobile-nav" class:mobile-nav--active={navActive}>
 		<nav>
 			<ul>
-				{#each navLinks as nav}
+				{#each navigation as nav}
 					<li>
 						<a href={nav.link}>{nav.text}</a>
 					</li>
