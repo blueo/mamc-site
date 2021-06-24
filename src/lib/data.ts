@@ -47,6 +47,19 @@ interface BlockTemplate extends Template {}
 type ContentTemplate = {
 	[key: string]: PageTemplate | BlockTemplate;
 };
+
+export type ConfigObject = {
+	content? :string;
+	data: {
+		[key: string]: any;
+	};	
+	isEmpty?: boolean;
+	excerpt?: string;
+	path: string;
+	fileName: string;
+	children?: Array<string>;
+};
+
 const contentTemplates: ContentTemplate = keyBy(templates, 'fileName');
 
 const markdown = glob.sync('./site/**/*.md');
@@ -58,7 +71,7 @@ const markdown = glob.sync('./site/**/*.md');
  * @param origin
  * @param fields
  */
-function combineFields(origin: matter.GrayMatterFile<string>, fields: Array<Field>): Object {
+function combineFields(origin: matter.GrayMatterFile<string>, fields: Array<Field>): ConfigObject {
 	fields.forEach((field: Field) => {
 		if (field?.default) {
 			//handle default value
@@ -126,17 +139,36 @@ function combineFields(origin: matter.GrayMatterFile<string>, fields: Array<Fiel
 		}
 	});
 
-	return origin;
+	return <ConfigObject> <unknown> origin;
 }
 
 const pageData = markdown.map((file) => {
 	// default content template
 	// @todo use template data to determine - good enough for now
 	let template = 'content-page';
-	let fileName = '';
+	let children: string[] = [];
+	const relativeName = path.relative('./site/', file);
 	const baseName = path.basename(file, '.md');
+	let fileName = `${path.dirname(relativeName)}/${baseName}`;
+	
+	// for index pages use dirname
 	if (baseName === 'index') {
-		fileName = path.dirname(path.relative('./site/', file));
+		fileName = path.dirname(relativeName);
+
+		// attach child page relations
+		if (fileName !== '.') {
+			const dir = path.dirname(file);
+			children = glob
+				.sync(`${dir}/**/*.md`)
+				// get child paths - @todo handle index and sub paths etc
+				.filter(child => path.basename(child, ".md") !== 'index')
+				.map((child) => {
+					const relativeName = path.relative('./site/', child);
+					const baseName = path.basename(child, '.md');
+					return `${path.dirname(relativeName)}/${baseName}`;
+				});
+			
+		}
 	}
 
 	//special case for homepage
@@ -164,6 +196,10 @@ const pageData = markdown.map((file) => {
 	}
 
 	const newConfig = combineFields(config, fields);
+
+	if (children.length) {
+		newConfig.children = children;
+	}
 
 	return {
 		...newConfig,
