@@ -12,15 +12,18 @@ page_blocks:
     Mount Albert. This service usually lasts about one hour and is followed by a shared
     morning tea.</p>"
 - template: content-block
-  title: Sunday School
-  content: "<p>The young people of Mount Albert Methodist are led by three women who
-    bring their various creative gifts to illustrate Christian principles of good
-    living and character to children who range in ages from 6 months to 15 years old.
-    The tenets of Christianity are offered to the children, who can make their own
-    choices in consultation with their parents regarding what it should mean to them.
-    The children regularly lead church services, and design their contributions themselves
-    guided by the Sunday School teachers. We enjoy music, and sing Christian songs-
-    usually accompanied by guitar.</p>"
+  title: Children at MAMC
+  content: "<p>The young people of Mount Albert Methodist are led by volunteers who
+    bring their various creative gifts to illustrate Christian principles and texts
+    to children from 0 to18 years of age. The tenets of Christianity are offered to
+    the children, who can make their own choices in consultation with their parents
+    regarding what these should mean to them. The children regularly lead church services,
+    and design their contributions themselves guided by the Sunday School teachers.
+    Younger children are able to play in the crèche area with puzzles, books, and
+    colouring-in equipment during the first half of the service, and then all go out
+    to their activites during the second half. These activities are held both together
+    and divided into Senior, Junior, and Infants classes. Nappy change facilities
+    are located in the unisex bathroom in the church foyer.</p>"
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
