@@ -21,8 +21,8 @@ home_page_blocks:
   colour_scheme: ''
   image_orientation: ''
 - template: call-to-action-block
-  content: Services & Upcoming Events
-  button_text: Learn More
+  content: Services & upcoming events
+  button_text: Learn more
   button_link: "/services-and-events"
 - template: centered-media-block
   title: Mount Albert Methodist Church Choir
