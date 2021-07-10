@@ -29,7 +29,9 @@ home_page_blocks:
   content: Our enthusiastic and accomplished choir conductor, Mark Rosser, encourages
     a motley band of talented amateurs to perform works such as Johannes Brahms ‘Requiem’,
     Andrew Carter ‘Benedicite’, Camille Saint-Saëns ‘Oratorio de Noël’, Felix Mendelssohn
-    ‘Elijah’, and many, many others!
+    ‘Elijah’, and many, many others! The choir is a high quality but relaxed and welcoming
+    ensemble that provides spiritual support for the congregation and has fun doing
+    so.
   image: "/v1608411452/mamc/media/image_6487327_1_usc5q2.jpg"
   image_description: Our choir in action
   call_to_action:
