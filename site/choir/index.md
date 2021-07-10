@@ -9,14 +9,17 @@ page_blocks:
 - template: content-block
   title: About the choir
   content: <p>Our enthusiastic and accomplished choir conductor, Mark Rosser, encourages
-    a motley band of enthusiastic amateurs to perform western masterpieces such as
-    Johannes Brahms ‘Requiem’, John Rutter ‘Requiem’, Andrew Carter ‘Benedicite’,
-    Camille Saint-Saëns ‘Oratorio de Noël’, Felix Mendelssohn ‘Elijah’, and miraculously
-    they always sound great. The evidence is found on the <a href="https://www.facebook.com/Mount-Albert-Methodist-Church-1695911697336904/"
-    title="MAMC facebook page">Mount Albert Methodist Facebook Page</a> with links
-    to some of these performances.</p><p><strong>The Mount Albert Methodist Choir
-    meets on Wednesday nights from 7.30 – 9.00pm</strong> </p><p>There is a pre-service
-    rehearsal on <strong>Sunday mornings at 9.30am</strong>. </p>
+    a motley band of talented amateurs to perform works such as Johannes Brahms ‘Requiem’,
+    Andrew Carter ‘Benedicite’, Camille Saint-Saëns ‘Oratorio de Noël’, Felix Mendelssohn
+    ‘Elijah’, and many, many others. The choir is a high quality but relaxed and welcoming
+    ensemble that provides spiritual support for the congregation and has fun doing
+    so - and miraculously they (almost) always sound great! You can view some of the
+    choir's performances on <a href="https://www.youtube.com/channel/UCwCPNr66rHNgcVpTnVaxLnA"
+    title="">this youtube channel</a>, and some of our virtual performaces recorded
+    during 2020 Covid-19 lockdowns on <a href="https://www.youtube.com/channel/UCJqs3opC3b2IggMFlhtZ9rQ/featured"
+    title="">this youtube channel</a>. </p><p><strong>The Mount Albert Methodist Choir
+    meets for rehearsal on Wednesday nights from 7.30 – 9.00pm</strong></p><p>There
+    is also a pre-service rehearsal on <strong>Sunday mornings at 9.30am</strong>.</p>
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
