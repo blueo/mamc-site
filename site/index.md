@@ -13,7 +13,7 @@ home_page_blocks:
     </p><p class="MsoNormal">We’re part of the Auckland Methodist Synod, and Te Haahi
     Weteriana o Aotearoa - The Methodist Church of New Zealand.</p>
   image: "/v1598081745/mamc/media/mainbuilding_qlqere.jpg"
-  image_description: MAMC building from New North Road
+  image_description: Mt Albert Methodist Church building from New North Road
   call_to_action:
     text: Learn more
     link: "/about-us"
