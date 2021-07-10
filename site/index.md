@@ -39,7 +39,7 @@ home_page_blocks:
     link: "/choir"
 - template: call-to-action-block
   content: Giving @ MAMC
-  button_text: Support Us
+  button_text: Support us
   button_link: "/giving"
 footer_title: ''
 footer_address: ''
