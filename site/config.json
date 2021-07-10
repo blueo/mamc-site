@@ -21,6 +21,12 @@
       "external": false
     },
     {
+      "text": "Community",
+      "link": "/community",
+      "position": "right",
+      "external": false
+    },
+    {
       "text": "About us",
       "link": "/about-us",
       "position": "right",
