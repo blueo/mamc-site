@@ -27,9 +27,9 @@ home_page_blocks:
 - template: centered-media-block
   title: Mount Albert Methodist Church Choir
   content: Our enthusiastic and accomplished choir conductor, Mark Rosser, encourages
-    a motley band of enthusiastic amateurs to perform western masterpieces such as
-    Johannes Brahms ‘Requiem’, John Rutter ‘Requiem’, Andrew Carter ‘Benedicite’,
-    Camille Saint-Saëns ‘Oratorio de Noël’, Felix Mendelssohn ‘Elijah’
+    a motley band of talented amateurs to perform works such as Johannes Brahms ‘Requiem’,
+    Andrew Carter ‘Benedicite’, Camille Saint-Saëns ‘Oratorio de Noël’, Felix Mendelssohn
+    ‘Elijah’, and many, many others!
   image: "/v1608411452/mamc/media/image_6487327_1_usc5q2.jpg"
   image_description: Our choir in action
   call_to_action:
