@@ -1,15 +1,16 @@
 ---
 about_index: true
-title: Services and Events
+title: Services and events
 description: Services and Events
-hero_text: Services and Events
+hero_text: Services and events
 hero_subtitle: ''
 hero_image: "/v1607832558/mamc/media/IMG_3273_ijb254.jpg"
 page_blocks:
 - template: content-block
   title: Regular services
   content: "<p>Our regular service is at 10am every Sunday at 831 New North Road,
-    Mount Albert</p>"
+    Mount Albert. This service usually lasts about one hour and is followed by a shared
+    morning tea.</p>"
 - template: content-block
   title: Sunday School
   content: "<p>The young people of Mount Albert Methodist are led by three women who
