@@ -8,18 +8,19 @@ hero_subtitle: ''
 hero_image: "/v1602139845/mamc/media/church_in_session_tkzcyg.jpg"
 page_blocks:
 - template: content-block
-  title: ''
-  content: <p></p><p>We are a diverse, welcoming community of Christian people, following
-    the Methodist tradition.</p><p class="MsoNormal">We enjoy meeting together, sharing
-    food, music and worshipping God.</p><p>We have an active Sunday School, four part
-    Choir which gives regular concerts. We would welcome you as part of our church
-    family when you visit us - with a shared cup of tea or coffee after the service.</p><p>Mount
-    Albert Methodist supports various socially supportive community groups who meet
-    regularly in our Church Hall. We also share support of the Beneficiaries Advocacy
-    Mt Albert (BAMA) with St Luke’s Anglican Church. BAMA provides financial advice
-    to beneficiaries.</p><p>Our church celebrated its 150th year of service to the
-    community in 2016.</p><p>We’re part of the Auckland Methodist Synod, and Te Haahi
-    Weteriana o Aotearoa - The Methodist Church of New Zealand.</p>
+  title: About us
+  content: <p></p><p>We are a diverse and welcoming community of Christian people,
+    following the Methodist tradition.</p><p class="MsoNormal">Every Sunday, we meet
+    together in fellowship to worship God and to share music, discussion, and refreshments.</p><p>We
+    have an active Sunday School and a talented choir which gives regular concerts.
+    We welcome you as part of our church family when you visit us with a shared morning
+    tea after the service.</p><p>Mount Albert Methodist supports various socially
+    supportive community groups who meet regularly in our church hall. We also share
+    support of the Beneficiaries Advocacy Mt Albert (BAMA) with St Luke’s Anglican
+    Church which provides financial advice to beneficiaries.</p><p>Our church celebrated
+    its 150th year of service to the community in 2016.</p><p>We’re part of the Auckland
+    Methodist Synod, and Te Haahi Weteriana o Aotearoa - The Methodist Church of New
+    Zealand.</p>
 - template: content-block
   content: "<p>The Mount Albert Methodist Church has many opportunities for Christian
     service within the church, and in outreach to the community. We can contribute
