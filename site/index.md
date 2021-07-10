@@ -1,17 +1,17 @@
 ---
 hero_text: Welcome to <strong>Mount Albert Methodist Church<br><br></strong>
-hero_subtitle: our regular service is at 10am every Sunday
+hero_subtitle: Our regular service is at 10am every Sunday
 hero_address: 831 New North Road, Mount Albert
 hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 home_page_blocks:
 - template: media-block
-  title: About our Church
-  content: <p>We are a diverse, welcoming community of Christian people, following
-    the Methodist tradition.</p><p class="MsoNormal">We enjoy meeting together, sharing
-    food, music and worshipping God.</p><p class="MsoNormal">We’re part of the Auckland
-    Methodist Synod, and Te Haahi Weteriana o Aotearoa - The Methodist Church of New
-    Zealand.</p>
+  title: About our church
+  content: <p>We are a diverse and welcoming community of Christian people, following
+    the Methodist tradition.</p><p class="MsoNormal">Every Sunday, we meet together
+    in fellowship to worship God and to share music, discussion, and refreshments.
+    </p><p class="MsoNormal">We’re part of the Auckland Methodist Synod, and Te Haahi
+    Weteriana o Aotearoa - The Methodist Church of New Zealand.</p>
   image: "/v1598081745/mamc/media/mainbuilding_qlqere.jpg"
   image_description: MAMC building from New North Road
   call_to_action:
