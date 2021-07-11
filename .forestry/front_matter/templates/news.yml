@@ -7,12 +7,6 @@ fields:
   config:
     required: true
   label: Title
-- name: body
-  type: text
-  config:
-    required: false
-  label: Body
-  description: Main content
 - name: date
   type: datetime
   description: publish date
@@ -22,6 +16,20 @@ fields:
     time_format: 
     display_utc: false
   label: Date
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Body
+- name: attachments
+  type: image_gallery
+  config: {}
+  label: Attachments
+  description: PDF attachments - other file types will be ignored.
 - name: layout
   type: text
   config:
