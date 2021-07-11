@@ -23,6 +23,10 @@ sections:
 - type: document
   path: site/giving/index.md
   label: Giving
+- type: document
+  path: site/community/index.md
+  label: Community
+  match: "**/*"
 - type: heading
   label: Not yet live
 - type: directory
