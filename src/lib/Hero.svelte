@@ -71,7 +71,7 @@
 		position: relative;
 		background-color: black; /** no var used as only for img opacity */
 		overflow: hidden;
-		min-height: 50vh;
+		min-height: 30vh;
 	}
 
 	.hero-fig picture {
@@ -95,6 +95,12 @@
 
 		.hero-fig picture img {
 			height: auto;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.hero-fig {
+			min-height: 60rem;
 		}
 	}
 
