@@ -118,7 +118,7 @@
 			<ul>
 				{#each navigation as nav}
 					<li>
-						<a href={nav.link}>{nav.text}</a>
+						<a href={nav.link} on:click={toggleMobileNav}>{nav.text}</a>
 					</li>
 				{/each}
 			</ul>
