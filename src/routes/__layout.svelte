@@ -305,7 +305,7 @@
 		opacity: 0.6;
 	}
 
-	@media screen and (min-width: 600px) {
+	@media screen and (min-width: 1024px) {
 		.desktop-nav {
 			display: block;
 		}
