@@ -1,5 +1,8 @@
 <script lang="ts">
+    import {format, parseISO} from 'date-fns';
+
 	export let title = '';
+	export let date = '';
 	export let content: string;
 	export let theme = 'light';
 
@@ -16,6 +19,11 @@
 		}
 		return 'content content--light';
 	}
+
+    function displayDate() {
+        const parsed = parseISO(date);
+        return format(parsed, 'do LLL y');
+    }
 </script>
 
 <div class={rowClass()}>
@@ -23,6 +31,7 @@
 		<section class="text-block">
 			<div class="content-container">
 				{#if title}<h2 class="title">{title}</h2>{/if}
+                {#if date}<strong>{displayDate()}</strong>{/if}
 				<div class={contentClass()}>{@html content}</div>
 			</div>
 		</section>
