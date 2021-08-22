@@ -5,6 +5,10 @@ hero_address: 831 New North Road, Mount Albert
 hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 home_page_blocks:
+- template: notification-block
+  content: <strong>Notice:</strong> due to COVID-19 restrictions services are being held online
+  button_text: More information
+  button_link: "/covid-19"
 - template: media-block
   title: About our church
   content: <p>We are a diverse and welcoming community of Christian people, following

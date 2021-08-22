@@ -2,51 +2,52 @@
 label: Homepage
 hide_body: true
 fields:
-- type: text
-  name: title
-  label: Meta title
-  hidden: false
-  description: name of the page for search engines
-- type: textarea
-  name: hero_text
-  label: Main Title
-  config:
-    wysiwyg: true
-    schema:
-      format: html
-  description: Largest text seen at the top of the homepage
-- name: hero_subtitle
-  type: text
-  config:
-    required: false
-  label: Subtitle
-- name: hero_address
-  type: text
-  config:
-    required: false
-  label: Address
-  description: Main church address
-- name: hero_image
-  type: file
-  config:
-    maxSize: 64
-  label: Hero image
-  description: Main banner image
-- name: home_page_blocks
-  type: blocks
-  template_types:
-  - media-block
-  - call-to-action-block
-  - centered-media-block
-  config:
-    min: 
-    max: 
-  label: Home page blocks
-  description: Choose sections to display on the home page
-- name: footer
-  type: include
-  config: {}
-  template: footer
-  label: Footer
+  - type: text
+    name: title
+    label: Meta title
+    hidden: false
+    description: name of the page for search engines
+  - type: textarea
+    name: hero_text
+    label: Main Title
+    config:
+      wysiwyg: true
+      schema:
+        format: html
+    description: Largest text seen at the top of the homepage
+  - name: hero_subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: hero_address
+    type: text
+    config:
+      required: false
+    label: Address
+    description: Main church address
+  - name: hero_image
+    type: file
+    config:
+      maxSize: 64
+    label: Hero image
+    description: Main banner image
+  - name: home_page_blocks
+    type: blocks
+    template_types:
+      - media-block
+      - call-to-action-block
+      - centered-media-block
+      - notification-block
+    config:
+      min:
+      max:
+    label: Home page blocks
+    description: Choose sections to display on the home page
+  - name: footer
+    type: include
+    config: {}
+    template: footer
+    label: Footer
 pages:
-- site/index.md
+  - site/index.md

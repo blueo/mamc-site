@@ -13,6 +13,8 @@
 </div>
 
 <style lang="stylus" scoped>
+@import "../../global.styl";
+
 .title {
   color: var(--color-bluegreen);
   width: auto;
@@ -27,5 +29,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;	
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.content {
+		padding: 0;
+	}
 }
 </style>

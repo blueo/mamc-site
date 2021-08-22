@@ -3,6 +3,7 @@ import CallToActionBlock from './CallToActionBlock.svelte';
 import CenteredMediaBlock from './CenteredMediaBlock.svelte';
 import ContentBlock from './ContentBlock.svelte';
 import TextBlock from './TextBlock.svelte';
+import NotificationBlock from './NotificationBlock.svelte';
 
 // mapping of forestry block types to components
 export default {
@@ -10,5 +11,6 @@ export default {
 	'call-to-action-block': CallToActionBlock,
 	'centered-media-block': CenteredMediaBlock,
 	'content-block': ContentBlock,
-	'text-block': TextBlock
+	'text-block': TextBlock,
+	'notification-block': NotificationBlock
 };
