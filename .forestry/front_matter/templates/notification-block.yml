@@ -2,24 +2,24 @@
 label: Notification Block
 hide_body: true
 fields:
-  - name: content
-    type: textarea
-    config:
-      required: true
-      wysiwyg: true
-      schema:
-        format: html
-    label: Content
-  - name: button_text
-    type: text
-    config:
-      required: false
-      max: 100
-    label: Button text
-    description: text for call to action button
-  - name: button_link
-    type: text
-    config:
-      required: false
-    label: Button Link
-    description: where the button links to eg /about-us or https://google.com
+- name: content
+  type: textarea
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html
+  label: Content
+- name: button_text
+  type: text
+  config:
+    required: false
+    max: 100
+  label: Button text
+  description: text for call to action button
+- name: button_link
+  type: text
+  config:
+    required: false
+  label: Button Link
+  description: where the button links to eg /about-us or https://google.com
