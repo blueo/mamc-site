@@ -29,7 +29,6 @@ sections:
 - type: document
   path: site/covid-19/index.md
   label: COVID-19
-  match: "**/*"
 - type: heading
   label: Not yet live
 - type: directory
