@@ -2,16 +2,24 @@
 community_index: true
 title: Covid 19
 description: MAMC with COVID-19
-hero_text: MAMC with COVID-19
-hero_subtitle: MAMC is part of a wider community of organisations that you can find out about here
-hero_image: '/v1602139845/mamc/media/church_in_session_tkzcyg.jpg'
+hero_text: MAMC during COVID-19 lockdown
+hero_subtitle: How we're operating while Auckland is at Alert Levels 4 and 3
+hero_image: "/v1602139845/mamc/media/church_in_session_tkzcyg.jpg"
 page_blocks:
-  - template: content-block
-    title: Community Club
-    content: '<p><strong>Open 3 days per week, Mon, Wed and Fridays 8.30 - 3.00<strong></p><p>We are a Creative and Social space for people with lived experience of mental health issues/tangata whai ora. Offering a varied programme of creative and wellbeing activities.</p>'
+- template: content-block
+  title: ''
+  content: "To keep our communities safe and to stop the spread of the Delta variant
+    of COVID-19, Mt Albert Methodist Church is adhering to all advice and direction
+    from the Ministry of Health.\n\nChurch services will be held over Zoom every Sunday
+    at 10am while Auckland remains at Alert Levels 3 or 4. Whether you are a member
+    already or if you're new to us and seeking spiritual comfort during this challenging
+    time, you are most welcome to join each week for music, reflection, and connection.
+    \n\nSimply fill out the contact form below or email mount.albert.methodist@xtra.co.nz
+    to gain access to the Zoom service links.  "
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
 footer_phone: ''
 footer_email: ''
+
 ---
