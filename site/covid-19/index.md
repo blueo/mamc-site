@@ -1,5 +1,4 @@
 ---
-covid-19_index: true
 title: Covid 19
 description: MAMC with COVID-19
 hero_text: MAMC during COVID-19 lockdown
@@ -21,5 +20,6 @@ footer_address: ''
 footer_address_link: ''
 footer_phone: ''
 footer_email: ''
+covid-19_index: true
 
 ---
