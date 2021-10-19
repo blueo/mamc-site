@@ -32,4 +32,4 @@ fields:
   config:
     required: false
   label: Email
-  default: mount.albert.methodist@xtra.co.nz
+  default: info@mamc.church
