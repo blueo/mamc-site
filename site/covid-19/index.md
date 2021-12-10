@@ -2,7 +2,7 @@
 title: Covid 19
 description: MAMC with COVID-19
 hero_text: MAMC during COVID-19 lockdown
-hero_subtitle: How we're operating while Auckland is at Alert Levels 4 and 3
+hero_subtitle: How we're operating during COVID-19 restrictions
 hero_image: "/v1629705785/mamc/media/black-solid-color-image_yao3na.png"
 page_blocks:
 - template: content-block
