@@ -20,8 +20,8 @@ const config = {
 		prerender: {
 			crawl: true,
 			enabled: true,
-			force: true,
-			pages: ['*', '/sitemap.xml']
+			onError: 'continue',
+			entries: ['*', '/sitemap.xml']
 		}
 	}
 };
