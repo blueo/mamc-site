@@ -50,7 +50,7 @@
 	<Hero address={hero_address} text={hero_text} image={hero_image} subtitle={hero_subtitle} />
 	<section class="appeal">
 	<a href="https://www.christmasappeal.org.nz">
-		<img src="https://christmasappeal.org.nz/wp-content/uploads/2019/09/cws-christmas-appeal-2019.jpg" />
+		<img alt="CWS Christmas Appeal" src="https://christmasappeal.org.nz/wp-content/uploads/2019/09/cws-christmas-appeal-2019.jpg" />
 	</a>
 </section>
 	<Blocks blocks={home_page_blocks} />
