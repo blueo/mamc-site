@@ -2,7 +2,7 @@
 	import type { PageTemplate } from '$lib/data';
 	import type { LoadInput, LoadOutput } from '@sveltejs/kit/types/page';
 
-	export async function load({ page, fetch }: LoadInput): Promise<LoadOutput> {
+	export async function load({ fetch }: LoadInput): Promise<LoadOutput> {
 		const url = `/index.json`;
 		const res = await fetch(url);
 
@@ -48,8 +48,27 @@
 </svelte:head>
 <main>
 	<Hero address={hero_address} text={hero_text} image={hero_image} subtitle={hero_subtitle} />
-
+	<section class="appeal">
+	<a href="https://www.christmasappeal.org.nz">
+		<img src="https://christmasappeal.org.nz/wp-content/uploads/2019/09/cws-christmas-appeal-2019.jpg" />
+	</a>
+</section>
 	<Blocks blocks={home_page_blocks} />
 </main>
 
-<Footer {footer_address} {footer_email} {footer_phone} />
+<Footer {footer_address} {footer_email} {footer_phone} {footer_address_link} />
+
+<style scoped lang="stylus">
+	.appeal {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 600px) {
+		.appeal img {
+			min-height 35rem;
+		}
+	}
+</style>
