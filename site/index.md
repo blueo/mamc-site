@@ -1,12 +1,13 @@
 ---
 hero_text: Welcome to <strong>Mount Albert Methodist Church<br><br></strong>
-hero_subtitle: Our regular service is at 10am every Sunday
-hero_address: 831 New North Road, Mount Albert
+hero_subtitle: Our Christmas Service is at 9:30 am online
+hero_address: see below for details
 hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 home_page_blocks:
 - template: notification-block
-  content: <strong>Notice:</strong> due to COVID-19 restrictions services are being held online
+  content: "<strong>Notice:</strong> due to COVID-19 restrictions services are being
+    held online"
   button_text: More information
   button_link: "/covid-19"
 - template: media-block

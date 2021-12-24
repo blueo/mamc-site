@@ -7,14 +7,15 @@ hero_image: "/v1629705785/mamc/media/black-solid-color-image_yao3na.png"
 page_blocks:
 - template: content-block
   title: ''
-  content: <p>To keep our communities safe from COVID-19, Mt Albert Methodist Church
-    is adhering to all advice and direction from the Ministry of Health.</p><p>Church
-    services will be held over Zoom every Sunday at 10am while Auckland is at the
-    Red level of the "Traffic Light settings". Whether you are a member already or
-    if you're new to us and seeking spiritual comfort during this challenging time,
-    you are most welcome to join each week for music, reflection, and connection.</p><p>Simply
+  content: <p><strong>The Christmas 2021 Service will be held online at 9:30am.</strong></p><p>To
+    keep our communities safe from COVID-19, Mt Albert Methodist Church is adhering
+    to all advice and direction from the Ministry of Health.</p><p>Church services
+    will be held over Zoom every Sunday at 10am while Auckland is at the Red level
+    of the "Traffic Light settings". Whether you are a member already or if you're
+    new to us and seeking spiritual comfort during this challenging time, you are
+    most welcome to join each week for music, reflection, and connection.</p><p><strong>Simply
     fill out the contact form below or email mount.albert.methodist@xtra.co.nz to
-    gain access to the Zoom service links.</p>
+    gain access to the Zoom service links.</strong></p>
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
