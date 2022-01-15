@@ -7,7 +7,7 @@ title: Home
 home_page_blocks:
 - template: notification-block
   content: "<strong>Notice:</strong> due to COVID-19 restrictions services are being
-    held online"
+    held both online and in person"
   button_text: More information
   button_link: "/covid-19"
 - template: media-block
