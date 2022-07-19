@@ -9,7 +9,7 @@ page_blocks:
   title: ''
   content: "<p>To keep our communities safe from COVID-19, Mt Albert Methodist Church
     is adhering to all advice and direction from the Ministry of Health.</p><p>Church
-    services will be held<strong> over Zoom and in person</strong> every Sunday at
+    services will be held<strong> over Zoom and in-person</strong> every Sunday at
     10am. Whether you are a member already or if you're new to us and seeking spiritual
     comfort during this challenging time, you are most welcome to join each week for
     music, reflection, and connection.</p><p><strong>For those attending in-person
