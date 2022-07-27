@@ -12,7 +12,7 @@ home_page_blocks:
   button_link: "/covid-19"
 - template: media-block
   title: About our church
-  content: <p>We are called to welcome diversity nurture community, and develop faith
+  content: <p>We are called to welcome diversity, nurture community, and develop faith
     into action.</p><p><em>Te manaaki i te kanorau, te manaaki i te hapori, me te
     whakahanake i te Whakapono ki te mahi.</em></p><p>We are a welcoming faith community
     which reflects love and, connects with God through Jesus Christ.</p><p class="MsoNormal">We’re
