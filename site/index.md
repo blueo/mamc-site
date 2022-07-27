@@ -12,11 +12,12 @@ home_page_blocks:
   button_link: "/covid-19"
 - template: media-block
   title: About our church
-  content: <p>We are a diverse and welcoming community of Christian people, following
-    the Methodist tradition.</p><p class="MsoNormal">Every Sunday, we meet together
-    in fellowship to worship God and to share music, discussion, and refreshments.
-    </p><p class="MsoNormal">We’re part of the Auckland Methodist Synod, and Te Haahi
-    Weteriana o Aotearoa - The Methodist Church of New Zealand.</p>
+  content: <p>We are called to welcome diversity nurture community, and develop faith
+    into action.</p><p><em>Te manaaki i te kanorau, te manaaki i te hapori, me te
+    whakahanake i te Whakapono ki te mahi.</em></p><p>We are a welcoming faith community
+    which reflects love and, connects with God through Jesus Christ.</p><p class="MsoNormal">We’re
+    part of the Auckland Methodist Synod, and Te Haahi Weteriana o Aotearoa - The
+    Methodist Church of New Zealand.</p>
   image: "/v1598081745/mamc/media/mainbuilding_qlqere.jpg"
   image_description: Mt Albert Methodist Church building from New North Road
   call_to_action:
