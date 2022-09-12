@@ -39,6 +39,7 @@ fields:
 pages:
 - site/about-us/index.md
 - site/choir/index.md
+- site/community/index.md
 - site/covid-19/index.md
 - site/giving/index.md
 - site/services-and-events/index.md
