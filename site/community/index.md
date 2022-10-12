@@ -9,10 +9,10 @@ hero_image: "/v1602139845/mamc/media/church_in_session_tkzcyg.jpg"
 page_blocks:
 - template: content-block
   title: Community Club
-  content: "<p><strong>Open 3 days per week, Mon, Wed and Fridays 8.30 - 3.00<strong></p><p>We
+  content: "<p><strong>Open 3 days per week, Monday to Thursday 8.30 - 3.00</strong></p><p><strong>We
     are a Creative and Social space for people with lived experience of mental health
     issues/tangata whai ora. Offering a varied programme of creative and wellbeing
-    activities.</p>"
+    activities.</strong></p>"
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
