@@ -21,3 +21,6 @@ fields:
     required: true
   label: Button Link
   description: where the button links to eg /about-us or https://google.com
+- name: open_in_a_new_window
+  type: boolean
+  label: Open in a new window
