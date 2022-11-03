@@ -11,12 +11,12 @@ page_blocks:
   colour_scheme: dark
   image_right: false
   image_orientation: square
-  title: Mission Statement
+  title: We are called to...
   image: "/v1602139831/mamc/media/stained_glass_window_fsrzp2.jpg"
   image_description: Mount Albert Methodist Church stained glass window in foyer
-  content: "<h3>We are called to...</h3><h2>Welcome diversity<br>nurture community,
-    and<br>develop faith into action.</h2><h2>Te manaaki i te kanorau,<br>te manaaki
-    i te hapori, me<br>te whakahanake i te Whakapono ki te mahi.</h2>"
+  content: "<h2>Welcome diversity<br>nurture community, and<br>develop faith into
+    action.</h2><h2>Te manaaki i te kanorau,<br>te manaaki i te hapori, me<br>te whakahanake
+    i te Whakapono ki te mahi.</h2>"
   call_to_action:
     text: ''
     link: ''
