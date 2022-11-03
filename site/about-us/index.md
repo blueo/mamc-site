@@ -9,11 +9,11 @@ hero_image: "/v1602139845/mamc/media/church_in_session_tkzcyg.jpg"
 page_blocks:
 - template: media-block
   colour_scheme: dark
-  image_right: true
+  image_right: false
   image_orientation: square
   title: Mission Statement
-  image: "/v1667507001/mamc/media/firefox_kOki5lhKgR_evjjkq.jpg"
-  image_description: Mount Albert Methodist Church from New North Road with Logo
+  image: "/v1602139831/mamc/media/stained_glass_window_fsrzp2.jpg"
+  image_description: Mount Albert Methodist Church stained glass window in foyer
   content: "<h3>We are called to...</h3><h2><br>Welcome diversity<br>nurture community,
     and<br>develop faith into action.</h2><h2><br>Te manaaki i te kanorau,<br>te manaaki
     i te hapori, me<br>te whakahanake i te Whakapono ki te mahi.</h2>"
