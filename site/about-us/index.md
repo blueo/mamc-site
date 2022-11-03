@@ -31,6 +31,19 @@ page_blocks:
     various skills and talents to raise money for other causes thoughtfully considered
     to be worthy.</p>"
   title: Opportunities for service
+- template: media-block
+  colour_scheme: dark
+  image_right: true
+  image_orientation: square
+  title: Mission Statement
+  image: "/v1667507001/mamc/media/firefox_kOki5lhKgR_evjjkq.jpg"
+  image_description: Mount Albert Methodist Church from New North Road with Logo
+  content: "<p><strong>We are called to...</strong></p><h2><br>Welcome diversity<br>nurture
+    community, and<br>develop faith into action.</h2><h2><br>Te manaaki i te kanorau,<br>te
+    manaaki i te hapori, me<br>te whakahanake i te Whakapono ki te mahi.</h2>"
+  call_to_action:
+    text: ''
+    link: ''
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
