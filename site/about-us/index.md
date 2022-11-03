@@ -38,9 +38,9 @@ page_blocks:
   title: Mission Statement
   image: "/v1667507001/mamc/media/firefox_kOki5lhKgR_evjjkq.jpg"
   image_description: Mount Albert Methodist Church from New North Road with Logo
-  content: "<p><strong>We are called to...</strong></p><h2><br>Welcome diversity<br>nurture
-    community, and<br>develop faith into action.</h2><h2><br>Te manaaki i te kanorau,<br>te
-    manaaki i te hapori, me<br>te whakahanake i te Whakapono ki te mahi.</h2>"
+  content: "<h3>We are called to...</h3><h2><br>Welcome diversity<br>nurture community,
+    and<br>develop faith into action.</h2><h2><br>Te manaaki i te kanorau,<br>te manaaki
+    i te hapori, me<br>te whakahanake i te Whakapono ki te mahi.</h2>"
   call_to_action:
     text: ''
     link: ''
