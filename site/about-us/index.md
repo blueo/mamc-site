@@ -9,7 +9,7 @@ hero_image: "/v1602139845/mamc/media/church_in_session_tkzcyg.jpg"
 page_blocks:
 - template: media-block
   colour_scheme: dark
-  image_right: true
+  image_right: false
   image_orientation: square
   title: Mission Statement
   image: "/v1667507001/mamc/media/firefox_kOki5lhKgR_evjjkq.jpg"
