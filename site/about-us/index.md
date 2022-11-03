@@ -20,6 +20,10 @@ page_blocks:
   call_to_action:
     text: ''
     link: ''
+- template: call-to-action-block
+  content: Read our Strategic Plan
+  button_text: Download
+  button_link: "/2022 V1 MAMC Strategic Plan.pdf"
 - template: content-block
   title: About us
   content: <p></p><p>We are a diverse and welcoming community of Christian people,
