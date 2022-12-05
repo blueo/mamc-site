@@ -5,11 +5,6 @@ hero_address: see below for details
 hero_image: "/v1602139860/mamc/media/DSC_0166_yhgklm.jpg"
 title: Home
 home_page_blocks:
-- template: notification-block
-  content: "<strong>Notice:</strong> due to COVID-19 restrictions services are being
-    held online"
-  button_text: More information
-  button_link: "/covid-19"
 - template: media-block
   title: About our church
   content: <p>We are called to welcome diversity, nurture community, and develop faith
@@ -30,6 +25,7 @@ home_page_blocks:
   content: Services & upcoming events
   button_text: Learn more
   button_link: "/services-and-events"
+  open_in_a_new_window: false
 - template: centered-media-block
   title: Mount Albert Methodist Church Choir
   content: Our enthusiastic and accomplished choir conductor, Mark Rosser, encourages
@@ -47,6 +43,7 @@ home_page_blocks:
   content: Giving @ MAMC
   button_text: Support us
   button_link: "/giving"
+  open_in_a_new_window: false
 footer_title: ''
 footer_address: ''
 footer_address_link: ''
